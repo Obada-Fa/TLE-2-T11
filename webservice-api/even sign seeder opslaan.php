@@ -1,24 +1,13 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Seeders;
 
-use App\Models\Category;
-use App\Models\Lesson;
-use App\Models\Sign;
-use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Sign>
- */
-class SignFactory extends Factory
+class SignsTableSeeder extends Seeder
 {
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
-    protected $model = Sign::class;
-    public function definition(): array
+    public function run()
     {
         $signs = [
             // Les 1 - 1
@@ -428,37 +417,15 @@ class SignFactory extends Factory
 
         ];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        return [
-            'title' => 'Naam',
-            'image' => $this->faker->imageUrl(),
-            'video' => $this->faker->url,
-            'description' => $this->faker->sentence,
-            'lesson_id' => Lesson::factory(),
-            // Door dat je Lesson::factory gebruikt zal
-            // die automatisch een rij aanmaken met een naam en gaat tie automatisch de id gebruiken.
-            'category_id' => Category::factory(), // Zorg dat CategoryFactory bestaat
-            // De comments gelden ook voor deze id maar ook voor andere factories.
-        ];
+        foreach ($signs as $sign) {
+            DB::table('signs')->insert([
+                'title' => $sign['title'],
+                'image' => "public/signimages/{$sign['title']}.png",
+                'video' => "public/signvideos/{$sign['title']}.mp4",
+                'lesson_id' => $sign['lesson_id'],
+                'description' => $sign['description'],
+                'category_id' => $sign['category_id'],
+            ]);
+        }
     }
 }
