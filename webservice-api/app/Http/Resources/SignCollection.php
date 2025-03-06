@@ -14,6 +14,17 @@ class SignCollection extends ResourceCollection
      */
     public function toArray(Request $request): array
     {
-        return parent::toArray($request);
+        return [
+            'data' => $this->collection->map(function ($sign) {
+                return [
+                    'id' => $sign->id,
+                    'title' => $sign->title, // Of andere velden die relevant zijn
+                    '_links' => [ 'self' => url("/signs/{$sign->id}") ],
+                ];
+            }),
+            '_links' => [
+                'self' => url('/signs/'), // Link naar de verzameling
+            ],
+        ];
     }
 }

@@ -21,7 +21,7 @@ class SignFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => $this->faker->word,
+            'title' => 'Naam',
             'image' => $this->faker->imageUrl(),
             'video' => $this->faker->url,
             'description' => $this->faker->sentence,

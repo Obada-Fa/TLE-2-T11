@@ -13,8 +13,8 @@ return new class extends Migration {
         Schema::create('signs', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('image');
-            $table->string('video');
+            $table->string('image')->nullable();
+            $table->string('video')->nullable();
             $table->string('description');
             $table->foreignId('lesson_id')
                 ->constrained()->onUpdate('cascade');
