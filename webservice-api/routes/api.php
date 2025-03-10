@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\V1\CategoriesController;
 use App\Http\Controllers\Api\V1\SignsController;
 use App\Http\Controllers\Api\V1\LessonsController;
+use App\Http\Controllers\Api\V1\AssignmentController;
 use App\Http\Controllers\Api\V1\TestController as TestV1Controller;
 use App\Http\Controllers\Api\V2\TestController as TestV2Controller;
 
@@ -27,7 +28,7 @@ Route::prefix('v1')->group(function () {
     Route::apiResource('signs',SignsController::class);
     Route::apiResource('categories',CategoriesController::class);
     Route::apiResource('lessons',LessonsController::class);
-
+    Route::apiResource('assignments',AssignmentController::class);
 
 });
 
