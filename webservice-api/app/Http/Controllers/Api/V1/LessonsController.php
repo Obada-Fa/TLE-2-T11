@@ -1,20 +1,24 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Http\Resources\AssignmentResource;
-use App\Models\Assignment;
+use App\Http\Controllers\Api\V1\Resources\LessonResource;
+use App\Models\Lesson;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class AssignmentController extends Controller
+class LessonsController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
-        return AssignmentResource::collection(Assignment::all());
+        // Dashboard portaal moet zichtbaar zijn
+        // To do: LessonResource maken en LessonColection hieraan toevoegen
+        return new LessonCollection(Lesson::all());
+
+
     }
 
     /**
@@ -36,19 +40,16 @@ class AssignmentController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Assignment $assignment)
+    public function show(Lesson $lesson)
     {
-        //
-        $assignmentCategories = Assignment::with('categories.signs')->find($assignment);
-        dd($assignmentCategories->first);
-//        dd($assignmentCategories);
-        return new AssignmentResource($assignmentCategories);
+        // haal de id op van de 1e les via postman
+        return new LessonResource($lesson);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Assignment $assignment)
+    public function edit(Lesson $lesson)
     {
         //
     }
@@ -56,7 +57,7 @@ class AssignmentController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Assignment $assignment)
+    public function update(Request $request, Lesson $lesson)
     {
         //
     }
@@ -64,7 +65,7 @@ class AssignmentController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Assignment $assignment)
+    public function destroy(Lesson $lesson)
     {
         //
     }
