@@ -8,36 +8,53 @@ use Illuminate\Support\Str;
 
 class ApiKeyController extends Controller
 {
-    // Generate a new API key
-    public function generate(Request $request): \Illuminate\Http\JsonResponse
+    public function generate(Request $request)
     {
-        $user = $request->user();
+        // ✅ REMOVE API KEY CHECK (Allow users to generate their first API key)
 
-        // Create a unique API key
+        // Generate a unique API key
         $plainTextKey = Str::random(60);
-        $hashedKey = hash('sha256', $plainTextKey); // Hash before storing
+        $hashedKey = hash('sha256', $plainTextKey);
 
-        // Save to database
+        // Store in database (Without requiring an existing API key)
         $apiKey = ApiKey::create([
-            'user_id' => $user->id,
+            'user_id' => 1, // ❗ Temporary fix (Replace with actual user logic later)
             'key' => $hashedKey,
             'name' => $request->input('name'),
         ]);
 
         return response()->json([
-            'api_key' => $plainTextKey, // Show only once!
-            'message' => 'Save this API key securely. You won’t see it again.',
+            'api_key' => $plainTextKey,
+            'message' => 'Save this API key securely. You won’t see it again.'
         ], 201);
     }
 
-    // Get user's API keys
-    public function list(Request $request): \Illuminate\Http\JsonResponse
+
+
+
+    public function list(Request $request)
     {
-        return response()->json($request->user()->apiKeys);
+        // Get API key from headers
+        $apiKey = $request->header('X-API-KEY');
+
+        if (!$apiKey) {
+            return response()->json(['error' => 'API key required'], 401);
+        }
+
+        // Hash API key before checking in database
+        $hashedKey = hash('sha256', $apiKey);
+        $keyRecord = ApiKey::where('key', $hashedKey)->where('active', true)->first();
+
+        if (!$keyRecord) {
+            return response()->json(['error' => 'Invalid API key'], 403);
+        }
+
+        // Return all API keys that belong to the authenticated user
+        return response()->json(ApiKey::where('user_id', $keyRecord->user_id)->get());
     }
 
-    // Revoke API key
-    public function revoke(Request $request, $id): \Illuminate\Http\JsonResponse
+
+    public function revoke(Request $request, $id)
     {
         $apiKey = ApiKey::where('user_id', $request->user()->id)->where('id', $id)->first();
 

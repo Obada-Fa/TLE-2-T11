@@ -9,7 +9,7 @@ class ApiKey extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['user_id', 'key', 'name']; // ✅ Ensure correct syntax
+    protected $fillable = ['user_id', 'key', 'name', 'active'];
 
     public function user()
     {

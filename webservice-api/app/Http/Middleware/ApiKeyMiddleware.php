@@ -17,10 +17,9 @@ class ApiKeyMiddleware
         }
 
         $hashedKey = hash('sha256', $apiKey);
+        $key = ApiKey::where('key', $hashedKey)->where('active', true)->first();
 
-        $key = ApiKey::where('key', $hashedKey)->first();
-
-        if (!$key || !$key->active) {
+        if (!$key) {
             return response()->json(['error' => 'Invalid API key'], 403);
         }
 

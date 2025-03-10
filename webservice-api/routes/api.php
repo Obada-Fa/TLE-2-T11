@@ -6,15 +6,20 @@ use App\Http\Controllers\SignsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:sanctum');
+//Route::get('/user', function (Request $request) {
+//    return $request->user();
+//})->middleware('auth:sanctum');
 
-Route::middleware('auth:sanctum')->group(function () {
-    Route::post('/generate-api-key', [ApiKeyController::class, 'generate']);
-    Route::get('/api-keys', [ApiKeyController::class, 'list']);
-    Route::delete('/api-keys/{id}', [ApiKeyController::class, 'revoke']);
-});
+//Route::middleware('auth:sanctum')->group(function () {
+//    Route::post('/generate-api-key', [ApiKeyController::class, 'generate'])->name('generate-api-key');
+//    Route::get('/api-keys', [ApiKeyController::class, 'list'])->name('api-keys');
+//    Route::delete('/api-keys/{id}', [ApiKeyController::class, 'revoke'])->name('revoke-api-key');
+//});
+
+Route::post('/generate-api-key', [ApiKeyController::class, 'generate'])->name('generate-api-key');
+Route::get('/api-keys', [ApiKeyController::class, 'list'])->name('api-keys');
+Route::delete('/api-keys/{id}', [ApiKeyController::class, 'revoke'])->name('revoke-api-key');
+
 
 // the route starts with api/
 // To define a route u need to use apiResource see the example below
