@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Resources;
+namespace App\Http\Controllers\Api\V1\Resources;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
@@ -19,11 +19,11 @@ class SignCollection extends ResourceCollection
                 return [
                     'id' => $sign->id,
                     'title' => $sign->title, // Of andere velden die relevant zijn
-                    '_links' => [ 'self' => url("/signs/{$sign->id}") ],
+                    '_links' => [ 'self' => url("/api/v1/signs/{$sign->id}") ],
                 ];
             }),
             '_links' => [
-                'self' => url('/signs/'), // Link naar de verzameling
+                'self' => url('api/v1/signs/'), // Link naar de verzameling
             ],
         ];
     }

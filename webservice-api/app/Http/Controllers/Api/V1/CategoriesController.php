@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Http\Resources\CategoryResource;
-use App\Http\Resources\CategorySignResource;
+use App\Http\Controllers\Api\V1\Resources\CategoryResource;
+use App\Http\Controllers\Api\V1\Resources\CategorySignResource;
+use App\Http\Controllers\Controller;
 use App\Models\Category;
 use Illuminate\Http\Request;
 

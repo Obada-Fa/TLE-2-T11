@@ -1,17 +1,21 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
+use App\Http\Resources\AssignmentResource;
+use App\Http\Controllers\Controller;
+use App\Models\Assignment;
 use Illuminate\Http\Request;
 
-class LessonsController extends Controller
+class AssignmentController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        // Hier komt
+        //
+        return AssignmentResource::collection(Assignment::all());
     }
 
     /**
@@ -33,15 +37,19 @@ class LessonsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Assignment $assignment)
     {
         //
+        $assignmentCategories = Assignment::with('categories.signs')->find($assignment);
+        dd($assignmentCategories->first);
+//        dd($assignmentCategories);
+        return new AssignmentResource($assignmentCategories);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Assignment $assignment)
     {
         //
     }
@@ -49,7 +57,7 @@ class LessonsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Assignment $assignment)
     {
         //
     }
@@ -57,7 +65,7 @@ class LessonsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Assignment $assignment)
     {
         //
     }

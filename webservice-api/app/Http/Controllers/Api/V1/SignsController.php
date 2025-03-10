@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Http\Resources\SignCollection;
-use App\Http\Resources\SignResource;
+use App\Http\Controllers\Api\V1\Resources\SignCollection;
+use App\Http\Controllers\Api\V1\Resources\SignResource;
+use App\Http\Controllers\Controller;
 use App\Models\Sign;
 use Illuminate\Http\Request;
 

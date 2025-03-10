@@ -16,8 +16,6 @@ return new class extends Migration {
             $table->string('image')->nullable();
             $table->string('video')->nullable();
             $table->string('description');
-            $table->foreignId('lesson_id')
-                ->constrained()->onUpdate('cascade');
             $table->foreignId('category_id')
                 ->constrained()
                 ->onDelete('cascade')
