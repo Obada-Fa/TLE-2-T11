@@ -56,14 +56,32 @@ class ApiKeyController extends Controller
 
     public function revoke(Request $request, $id)
     {
-        $apiKey = ApiKey::where('user_id', $request->user()->id)->where('id', $id)->first();
+        // Get API key from headers
+        $apiKey = $request->header('X-API-KEY');
 
         if (!$apiKey) {
+            return response()->json(['error' => 'API key required'], 401);
+        }
+
+        // Hash API key before checking in database
+        $hashedKey = hash('sha256', $apiKey);
+        $keyRecord = ApiKey::where('key', $hashedKey)->where('active', true)->first();
+
+        if (!$keyRecord) {
+            return response()->json(['error' => 'Invalid API key'], 403);
+        }
+
+        // Find the API key that the user wants to delete
+        $apiKeyToDelete = ApiKey::where('user_id', $keyRecord->user_id)->where('id', $id)->first();
+
+        if (!$apiKeyToDelete) {
             return response()->json(['error' => 'API key not found'], 404);
         }
 
-        $apiKey->delete();
+        // Delete the API key
+        $apiKeyToDelete->delete();
 
-        return response()->json(['message' => 'API key revoked.']);
+        return response()->json(['message' => 'API key revoked successfully']);
     }
+
 }
