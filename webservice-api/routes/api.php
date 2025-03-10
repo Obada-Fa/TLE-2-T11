@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AssignmentController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\LessonsController;
 use App\Http\Controllers\SignsController;
@@ -16,4 +17,5 @@ Route::get('/user', function (Request $request) {
 Route::apiResource('signs',SignsController::class);
 Route::apiResource('categories',CategoriesController::class);
 Route::apiResource('lessons',LessonsController::class);
+Route::apiResource('assignments',AssignmentController::class);
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\AssignmentResource;
 use App\Models\Assignment;
 use Illuminate\Http\Request;
 
@@ -13,6 +14,7 @@ class AssignmentController extends Controller
     public function index()
     {
         //
+        return AssignmentResource::collection(Assignment::all());
     }
 
     /**
@@ -37,6 +39,10 @@ class AssignmentController extends Controller
     public function show(Assignment $assignment)
     {
         //
+        $assignmentCategories = Assignment::with('categories.signs')->find($assignment);
+        dd($assignmentCategories->first);
+//        dd($assignmentCategories);
+        return new AssignmentResource($assignmentCategories);
     }
 
     /**

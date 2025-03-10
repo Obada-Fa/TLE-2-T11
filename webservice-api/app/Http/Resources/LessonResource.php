@@ -17,8 +17,16 @@ class LessonResource extends JsonResource
 //        return parent::toArray($request);
         return [
             'id' => $this->id,
-            'name' => $this->name
-            // De les heeft ook een opdrachten kolom
+            'name' => $this->name,
+            // De les heeft ook een opdrachten kolom,
+            // Dit zorgt ervoor dat alle informatie gelijk wordt mee gestuurd naar de detail pagina.
+            'assignments' => $this->assignments->map
+            (function ($assignment) {
+                return [
+                    'id' => $assignment->id,
+                    'name' => $assignment->name
+                ];
+            })
         ];
     }
 }

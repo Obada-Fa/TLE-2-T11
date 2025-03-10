@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\LessonCollection;
 use App\Http\Resources\LessonResource;
 use App\Models\Lesson;
 use Illuminate\Http\Request;
@@ -15,7 +16,7 @@ class LessonsController extends Controller
     {
         // Dashboard portaal moet zichtbaar zijn
         // To do: LessonResource maken en LessonColection hieraan toevoegen
-        return Lesson::all();
+        return new LessonCollection(Lesson::all());
 
 
     }

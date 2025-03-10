@@ -20,7 +20,6 @@ class SignResource extends JsonResource
             'image' => $this->image,
             'video' => $this->video,
             'description' => $this->description,
-            'lessonId' => $this->lesson_id,
             'categoryId' => $this->category_id,
         ];
     }
