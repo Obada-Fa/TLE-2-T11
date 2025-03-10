@@ -14,6 +14,6 @@ class SignSeeder extends Seeder
     public function run(): void
     {
         //
-        Sign::factory(10)->create();
+        Sign::factory(100)->create();
     }
 }

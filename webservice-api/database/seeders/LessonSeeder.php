@@ -15,6 +15,6 @@ class LessonSeeder extends Seeder
     {
         // Nog niet zeker of deze gebruikt moet worden omdat de signseeder al een maakt?
 
-            //Lesson::factory(10)->create();
+            Lesson::factory(10)->create();
     }
 }

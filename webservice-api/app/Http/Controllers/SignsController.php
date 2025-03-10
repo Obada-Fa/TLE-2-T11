@@ -15,7 +15,7 @@ class SignsController extends Controller
     public function index()
     {
         // Haal alle signs op. Doordat je de api oproept met de / route krijg je alle signs
-            // Dit zou dan in de woordenboek interface moeten eindigen
+        // Dit zou dan in de woordenboek interface moeten eindigen
         return new SignCollection(Sign::all());
     }
 
@@ -24,8 +24,35 @@ class SignsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // 1. Validatie van de verplichte velden
+        $validatedData = $request->validate([
+            '*.title' => 'required|string|max:255',
+            '*.description' => 'required|string',
+            '*.lesson_id' => 'required',
+            '*.category_id' => 'required',
+            '*.image' => 'nullable|string', // Geen bestand, maar een string (URL of pad)
+            '*.video' => 'nullable|string', // Geen bestand, maar een string (URL of pad)
+        ]);
+
+        $signs = [];
+        foreach ($validatedData as $data) {
+            $sign = new Sign();
+            $sign->title = $data['title'];
+            $sign->description = $data['description'];
+//            $sign->image = $data['image']; // Direct als string opslaan
+            $sign->video = $data['video']; // Direct als string opslaan
+            $sign->lesson_id = $data['lesson_id'];
+            $sign->category_id = $data['category_id'];
+            $sign->save();
+            $signs[] = $sign;
+        }
+
+        return response()->json([
+            'message' => 'Sign successfully created!',
+            'data' => $signs,
+        ], 201);
     }
+
 
     /**
      * Display the specified resource.
@@ -41,7 +68,14 @@ class SignsController extends Controller
      */
     public function update(Request $request, Sign $signs)
     {
-        //
+        $validated = $request->validate([
+            'title' => 'required|string',
+            'lesson_id' => 'required|exists:lessons,id',
+            'category_id' => 'required|exists:categories,id',
+            'description' => 'nullable|string',
+        ]);
+
+        return Sign::create($validated);
     }
 
     /**
