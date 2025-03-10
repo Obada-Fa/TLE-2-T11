@@ -22,7 +22,6 @@ class SignResource extends JsonResource
             'description' => $this->description,
             'lessonId' => $this->lesson_id,
             'categoryId' => $this->category_id,
-
         ];
     }
 }

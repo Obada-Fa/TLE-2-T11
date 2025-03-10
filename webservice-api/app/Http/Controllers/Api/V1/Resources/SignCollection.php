@@ -19,7 +19,7 @@ class SignCollection extends ResourceCollection
                 return [
                     'id' => $sign->id,
                     'title' => $sign->title, // Of andere velden die relevant zijn
-                    '_links' => [ 'self' => url("/signs/{$sign->id}") ],
+                    '_links' => [ 'self' => url("/api/signs/{$sign->id}") ],
                 ];
             }),
             '_links' => [
