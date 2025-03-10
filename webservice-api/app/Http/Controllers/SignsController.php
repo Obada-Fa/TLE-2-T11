@@ -15,7 +15,7 @@ class SignsController extends Controller
     public function index()
     {
         // Haal alle signs op. Doordat je de api oproept met de / route krijg je alle signs
-            // Dit zou dan in de woordenboek interface moeten eindigen
+        // Dit zou dan in de woordenboek interface moeten eindigen
         return new SignCollection(Sign::all());
     }
 
@@ -24,7 +24,43 @@ class SignsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // 1. Validatie van de verplichte velden
+        $validatedData = $request->validate([
+            '*.title' => 'required|string|max:255',
+            '*.description' => 'required|string',
+            '*.lesson_id' => 'required',
+            '*.category_id' => 'required',
+            '*.image' => 'nullable|file|mimes:jpg,jpeg,png|max:2048', // Optioneel, max 2MB
+            '*.video' => 'nullable|file|mimes:mp4,avi,mkv|max:10000', // Optioneel, max 10MB
+        ]);
+
+        $signs = [];
+        foreach ($validatedData as $data) {
+            // 2. Verwerken van optionele velden (image & video)
+            $imagePath = $request->hasFile('image')
+                ? $request->file('image')->store('images', 'public')
+                : null;
+
+            $videoPath = $request->hasFile('video')
+                ? $request->file('video')->store('videos', 'public')
+                : null;
+
+
+            $sign = new Sign();
+            $sign->title = $data['title'];
+            $sign->description = $data['description'];
+            $sign->image = $imagePath;
+            $sign->video = $videoPath;
+            $sign->lesson_id = $data['lesson_id'];
+            $sign->category_id = $data['category_id'];
+            $sign->save();
+            $signs[] = $sign;
+        }
+
+        return response()->json([
+            'message' => 'Sign successfully created!',
+            'data' => $signs,
+        ], 201);
     }
 
     /**
