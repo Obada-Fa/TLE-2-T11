@@ -19,8 +19,7 @@ class Sign extends Model
         'image',
         'video',
         'category_id',
-        'lesson_id'
-
+        'lesson_id',
     ];
 
 

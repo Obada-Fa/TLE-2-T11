@@ -30,27 +30,17 @@ class SignsController extends Controller
             '*.description' => 'required|string',
             '*.lesson_id' => 'required',
             '*.category_id' => 'required',
-            '*.image' => 'nullable|file|mimes:jpg,jpeg,png|max:2048', // Optioneel, max 2MB
-            '*.video' => 'nullable|file|mimes:mp4,avi,mkv|max:10000', // Optioneel, max 10MB
+            '*.image' => 'nullable|string', // Geen bestand, maar een string (URL of pad)
+            '*.video' => 'nullable|string', // Geen bestand, maar een string (URL of pad)
         ]);
 
         $signs = [];
         foreach ($validatedData as $data) {
-            // 2. Verwerken van optionele velden (image & video)
-            $imagePath = $request->hasFile('image')
-                ? $request->file('image')->store('images', 'public')
-                : null;
-
-            $videoPath = $request->hasFile('video')
-                ? $request->file('video')->store('videos', 'public')
-                : null;
-
-
             $sign = new Sign();
             $sign->title = $data['title'];
             $sign->description = $data['description'];
-            $sign->image = $imagePath;
-            $sign->video = $videoPath;
+//            $sign->image = $data['image']; // Direct als string opslaan
+            $sign->video = $data['video']; // Direct als string opslaan
             $sign->lesson_id = $data['lesson_id'];
             $sign->category_id = $data['category_id'];
             $sign->save();
@@ -62,6 +52,7 @@ class SignsController extends Controller
             'data' => $signs,
         ], 201);
     }
+
 
     /**
      * Display the specified resource.
@@ -77,7 +68,14 @@ class SignsController extends Controller
      */
     public function update(Request $request, Sign $signs)
     {
-        //
+        $validated = $request->validate([
+            'title' => 'required|string',
+            'lesson_id' => 'required|exists:lessons,id',
+            'category_id' => 'required|exists:categories,id',
+            'description' => 'nullable|string',
+        ]);
+
+        return Sign::create($validated);
     }
 
     /**
