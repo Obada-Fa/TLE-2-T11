@@ -8,8 +8,6 @@ use App\Http\Controllers\Api\V1\TestController as TestV1Controller;
 use App\Http\Controllers\Api\V2\TestController as TestV2Controller;
 
 use App\Http\Controllers\ApiKeyController;
-use App\Http\Controllers\CategoriesController;
-use App\Http\Controllers\SignsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
