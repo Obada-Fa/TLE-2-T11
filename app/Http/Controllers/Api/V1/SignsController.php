@@ -29,10 +29,9 @@ class SignsController extends Controller
         $validatedData = $request->validate([
             '*.title' => 'required|string|max:255',
             '*.description' => 'required|string',
-            '*.lesson_id' => 'required',
             '*.category_id' => 'required',
-            '*.image' => 'nullable|string', // Geen bestand, maar een string (URL of pad)
-            '*.video' => 'nullable|string', // Geen bestand, maar een string (URL of pad)
+            '*.image' => 'nullable|string',
+            '*.video' => 'nullable|string',
         ]);
 
         $signs = [];
@@ -40,9 +39,8 @@ class SignsController extends Controller
             $sign = new Sign();
             $sign->title = $data['title'];
             $sign->description = $data['description'];
-//            $sign->image = $data['image']; // Direct als string opslaan
-            $sign->video = $data['video']; // Direct als string opslaan
-            $sign->lesson_id = $data['lesson_id'];
+            $sign->image = $data['image'];
+            $sign->video = $data['video'];
             $sign->category_id = $data['category_id'];
             $sign->save();
             $signs[] = $sign;
