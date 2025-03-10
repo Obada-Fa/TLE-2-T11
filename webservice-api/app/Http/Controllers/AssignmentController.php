@@ -2,22 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Resources\LessonResource;
-use App\Models\Lesson;
+use App\Models\Assignment;
 use Illuminate\Http\Request;
 
-class LessonsController extends Controller
+class AssignmentController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        // Dashboard portaal moet zichtbaar zijn
-        // To do: LessonResource maken en LessonColection hieraan toevoegen
-        return Lesson::all();
-
-
+        //
     }
 
     /**
@@ -39,16 +34,15 @@ class LessonsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Lesson $lesson)
+    public function show(Assignment $assignment)
     {
-        // haal de id op van de 1e les via postman
-        return new LessonResource($lesson);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Lesson $lesson)
+    public function edit(Assignment $assignment)
     {
         //
     }
@@ -56,7 +50,7 @@ class LessonsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Lesson $lesson)
+    public function update(Request $request, Assignment $assignment)
     {
         //
     }
@@ -64,7 +58,7 @@ class LessonsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Lesson $lesson)
+    public function destroy(Assignment $assignment)
     {
         //
     }

@@ -13,8 +13,12 @@ class Lesson extends Model
     protected $fillable = [
         'name'
     ];
-    public function signs(): hasMany
+    public function signs(): HasMany
     {
         return $this->hasMany(Sign::class);
+    }
+    public function assignments(): HasMany
+    {
+        return $this->hasMany(Assignment::class);
     }
 }

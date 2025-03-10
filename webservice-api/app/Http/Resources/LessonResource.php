@@ -5,7 +5,7 @@ namespace App\Http\Resources;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class SignResource extends JsonResource
+class LessonResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -14,14 +14,11 @@ class SignResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
+//        return parent::toArray($request);
         return [
             'id' => $this->id,
-            'title' => $this->title,
-            'image' => $this->image,
-            'video' => $this->video,
-            'description' => $this->description,
-            'lessonId' => $this->lesson_id,
-            'categoryId' => $this->category_id,
+            'name' => $this->name
+            // De les heeft ook een opdrachten kolom
         ];
     }
 }

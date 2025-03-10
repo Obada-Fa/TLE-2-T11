@@ -36,5 +36,4 @@ class CategorySignResource extends JsonResource
                 ];
             })];
     }
-
 }
