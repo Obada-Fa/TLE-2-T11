@@ -1,11 +1,9 @@
 <?php
 
-namespace App\Http\Resources;
+namespace App\Http\Controllers\Api\V1\Resources;
 
-use Illuminate\Database\Eloquent\JsonEncodingException;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
-use JsonException;
 
 class CategorySignResource extends JsonResource
 {
