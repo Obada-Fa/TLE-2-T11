@@ -14,9 +14,8 @@ class AssignmentFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition(): array
-    {
-        return [
+
+    private static $assignments = [
             1 => 'Vraagwoorden',
             2 => 'Tijdens de les',
             3 => 'Kennis maken',
@@ -41,6 +40,14 @@ class AssignmentFactory extends Factory
             22 => 'Ziekenhuisopname deel 2',
             23 => 'Lichaamsdelen',
             24 => 'Organen',
+        ];
+
+        public function definition(): array
+    {
+        $name = array_shift(self::$assignments);
+
+        return [
+            'name' => $name,
         ];
     }
 }

@@ -16,9 +16,7 @@ class LessonFactory extends Factory
      * @return array<string, mixed>
      */
     protected $model = Lesson::class;
-    public function definition(): array
-    {
-        return [
+    private static $lessons = [
             1 => 'Les 1',
             2 => 'Les 2',
             3 => 'Les 3',
@@ -27,6 +25,13 @@ class LessonFactory extends Factory
             6 => 'les 6',
             7 => 'les 7',
             8 => 'les 8',
+        ];
+    public function definition(): array
+    {
+        $name = array_shift(self::$lessons);
+
+        return [
+            'name' => $name,
         ];
     }
 }
