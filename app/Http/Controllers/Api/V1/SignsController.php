@@ -39,7 +39,7 @@ class SignsController extends Controller
             $sign = new Sign();
             $sign->title = $data['title'];
             $sign->description = $data['description'];
-            $sign->image = $data['image'];
+            $sign->image = $data['image']??"";
             $sign->video = $data['video'];
             $sign->category_id = $data['category_id'];
             $sign->save();
