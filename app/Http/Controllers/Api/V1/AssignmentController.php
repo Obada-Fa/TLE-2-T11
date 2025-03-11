@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Api\V1;
 
-use App\Http\Resources\AssignmentResource;
+use App\Http\Controllers\Api\V1\Resources\AssignmentResource;
 use App\Http\Controllers\Controller;
 use App\Models\Assignment;
 use Illuminate\Http\Request;

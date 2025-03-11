@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api\V1;
 
+use App\Http\Controllers\Api\V1\Resources\LessonCollection;
 use App\Http\Controllers\Api\V1\Resources\LessonResource;
 use App\Models\Lesson;
 use Illuminate\Http\Request;
