@@ -59,8 +59,6 @@ class SignsController extends Controller
      */
     public function show(Sign $sign)
     {
-        $sign->video = $sign->video ? asset('storage/videos/' . $sign->video) : null;
-
         return new SignResource($sign);
     }
 

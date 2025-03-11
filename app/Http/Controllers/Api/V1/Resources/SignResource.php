@@ -18,7 +18,7 @@ class SignResource extends JsonResource
             'id' => $this->id,
             'title' => $this->title,
             'image' => $this->image,
-            'video' => $this->video,
+            'video' => asset('storage/videos/' . $this->video),
             'description' => $this->description,
             'categoryId' => $this->category_id,
         ];
