@@ -35,7 +35,17 @@ class LessonsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255'
+        ]);
+        $lesson = new Lesson();
+        $lesson->name = $request->name;
+        $lesson->save();
+
+        return response()->json([
+            'message'=> 'Lesson succesfully created',
+            'data' => $lesson
+        ],201);
     }
 
     /**
@@ -61,6 +71,7 @@ class LessonsController extends Controller
     public function update(Request $request, Lesson $lesson)
     {
         //
+
     }
 
     /**

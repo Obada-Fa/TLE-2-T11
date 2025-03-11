@@ -25,7 +25,10 @@ class AssignmentResource extends JsonResource
                     'signs' => $category->signs->map(function ($sign) {
                         return [
                             'id' => $sign->id,
-                            'name' => $sign->name,
+                            'title' => $sign->title,
+                            'image' => $sign->image,
+                            'video' => $sign->video,
+                            'description' => $sign->description,
                         ];
                     })
                     ,

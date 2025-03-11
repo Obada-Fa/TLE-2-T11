@@ -16,7 +16,7 @@ class CategoriesController extends Controller
     public function index()
     {
         // Bij de woordenboek pagina ga je ook alle categorieen nodig moeten hebben. Die roep je ook op.
-        return  CategoryResource::collection(Category::all());
+        return  CategorySignResource::collection(Category::all());
     }
 
     /**
