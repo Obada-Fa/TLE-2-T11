@@ -31,7 +31,17 @@ class AssignmentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'name' => 'required|string|max:255'
+        ]);
+        $assignment = new Assignment();
+        $assignment ->name = $request ->name;
+        $assignment ->save();
+
+        return response()->json([
+            'message'=> 'Assignment succesfully created',
+            'data' => $assignment
+        ],201);
     }
 
     /**
@@ -48,19 +58,19 @@ class AssignmentController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Request $request, Assignment $assignment)
-    {
-        //
-    }
-
-    /**
      * Update the specified resource in storage.
      */
     public function update(Request $request, Assignment $assignment)
     {
-        //
+        $validated = $request->validate([
+            'name' => 'required|string|max:255'
+        ]);
+        $assignment->update($validated);
+
+        return response()->json([
+            'message'=> 'Assignment succesfully edited',
+            'data' => $assignment
+        ],200);
     }
 
     /**
@@ -68,6 +78,10 @@ class AssignmentController extends Controller
      */
     public function destroy(Assignment $assignment)
     {
-        //
+        $assignment->delete();
+
+        return response()->json([
+            'message' => 'Assignment successfully deleted'
+        ]);
     }
 }
