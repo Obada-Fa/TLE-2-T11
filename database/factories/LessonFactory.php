@@ -19,7 +19,14 @@ class LessonFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->name,
+            1 => 'Les 1',
+            2 => 'Les 2',
+            3 => 'Les 3',
+            4 => 'les 4',
+            5 => 'les 5',
+            6 => 'les 6',
+            7 => 'les 7',
+            8 => 'les 8',
         ];
     }
 }
