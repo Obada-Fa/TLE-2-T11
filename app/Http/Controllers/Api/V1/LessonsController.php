@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\V1\Resources\LessonResource;
 use App\Models\Lesson;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use function PHPUnit\Framework\isEmpty;
 
 class LessonsController extends Controller
 {
@@ -42,10 +43,12 @@ class LessonsController extends Controller
         $lesson->name = $request->name;
         $lesson->save();
 
+        if(isEmpty($validatedData)){
         return response()->json([
             'message'=> 'Lesson succesfully created',
             'data' => $lesson
         ],201);
+        }
     }
 
     /**
@@ -71,6 +74,7 @@ class LessonsController extends Controller
     public function update(Request $request, Lesson $lesson)
     {
         //
+
 
     }
 
