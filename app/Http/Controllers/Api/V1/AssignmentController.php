@@ -23,7 +23,7 @@ class AssignmentController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -40,16 +40,17 @@ class AssignmentController extends Controller
     public function show(Assignment $assignment)
     {
         //
-        $assignmentCategories = Assignment::with('categories.signs')->find($assignment);
-        dd($assignmentCategories->first);
-//        dd($assignmentCategories);
-        return new AssignmentResource($assignmentCategories);
+//        $assignmentCategories = Assignment::with('categories.signs')->find($assignment);
+//        // In plaats van een new resource toevoegen moet je een collection methode gebruiken omdat
+//        // je anders problemen krijgt net kolommen.
+//        return  AssignmentResource::collection($assignmentCategories);
+        return new AssignmentResource($assignment);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Assignment $assignment)
+    public function edit(Request $request, Assignment $assignment)
     {
         //
     }
