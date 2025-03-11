@@ -30,7 +30,7 @@ class SignsController extends Controller
             '*.title' => 'required|string|max:255',
             '*.description' => 'required|string',
             '*.category_id' => 'required',
-            '*.image' => 'nullable|string',
+            '*.image' => 'nullable',
             '*.video' => 'nullable|string',
         ]);
 
