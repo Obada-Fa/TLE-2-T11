@@ -34,6 +34,7 @@ class SignsController extends Controller
             '*.video' => 'nullable|string',
         ]);
 
+
         $signs = [];
         foreach ($validatedData as $data) {
             $sign = new Sign();
@@ -58,9 +59,11 @@ class SignsController extends Controller
      */
     public function show(Sign $sign)
     {
-        //
+        $sign->video = $sign->video ? asset('storage/videos/' . $sign->video) : null;
+
         return new SignResource($sign);
     }
+
 
     /**
      * Update the specified resource in storage.
