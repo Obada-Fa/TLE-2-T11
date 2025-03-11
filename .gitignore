@@ -1,28 +1,52 @@
-.idea
-package-lock.json
-.vite
-
-/.phpunit.cache
+# Node-modules & build files
 /node_modules
 /public/build
 /public/hot
+
+# Laravel specifieke bestanden
+/vendor
+/bootstrap/cache
 /public/storage
 /storage/*.key
 /storage/pail
-/vendor
+/storage/oauth-private.key
+/storage/oauth-public.key
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+/storage/videos/
+
+# SQLite database (indien gebruikt)
+/database/database.sqlite
+
+# Configuratie- en gevoelige bestanden
 .env
 .env.backup
 .env.production
-.phpactor.json
+/auth.json
+
+# PHPUnit & andere test-bestanden
+/.phpunit.cache
 .phpunit.result.cache
-Homestead.json
-Homestead.yaml
+.phpactor.json
+
+# Debug en log bestanden
 npm-debug.log
 yarn-error.log
-/auth.json
-/.fleet
+
+# Homestead & andere VM-configs
+Homestead.json
+Homestead.yaml
+
+# Editor specifieke bestanden
 /.idea
-/.nova
 /.vscode
+/.nova
+/.fleet
 /.zed
-/storage/videos/
+
+# Ignoring Mac, Windows en Linux systeem bestanden
+.DS_Store
+Thumbs.db
