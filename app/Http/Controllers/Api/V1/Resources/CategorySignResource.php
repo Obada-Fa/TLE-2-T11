@@ -30,7 +30,7 @@ class CategorySignResource extends JsonResource
                     'title' => $sign->title,
                     'description' => $sign->description,
                     'image' => $sign->image,
-                    'video' => $sign->video,
+                    'video' => asset('storage/videos/' .$sign->video)
                 ];
             })];
     }

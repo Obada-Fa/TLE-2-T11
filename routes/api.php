@@ -44,10 +44,11 @@ Route::prefix('v1')->middleware(NeutralMiddleware::class)->group(function () {
     Route::apiResource('assignments',AssignmentController::class);
 
 });
-Route::apiResource('signs',SignsController::class);
-
-Route::apiResource('categories',CategoriesController::class);
+//Route::apiResource('signs',SignsController::class);
+//
+//Route::apiResource('categories',CategoriesController::class);
 //Route::apiResource('lessons',Lesson::class);
+
 Route::middleware('api.key')->get('/protected-resource', function () {
     return response()->json(['message' => 'Access granted']);
 });
