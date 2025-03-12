@@ -31,7 +31,7 @@ class CategoryFactory extends Factory
         10 => 'Maanden',
         11 => 'Dagen',
         12 => 'Afspraak maken',
-        13 => 'Vraagwoorden2',
+        13 => 'Vraagwoorden 2',
         14 => 'Getallen',
         15 => 'Klok kijken',
         16 => 'Doktersbezoek algemeen',
