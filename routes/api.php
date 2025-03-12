@@ -8,6 +8,7 @@ use App\Http\Controllers\Api\V1\TestController as TestV1Controller;
 use App\Http\Controllers\Api\V2\TestController as TestV2Controller;
 
 use App\Http\Controllers\ApiKeyController;
+use App\Http\Middleware\NeutralMiddleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -33,7 +34,8 @@ Route::delete('/api-keys/{id}', [ApiKeyController::class, 'revoke'])->name('revo
 //Route::apiResource('categories',CategoriesController::class);
 
 
-Route::prefix('v1')->group(function () {
+Route::prefix('v1')->middleware(NeutralMiddleware::class)->group(function () {
+
     Route::get('/test', [TestV1Controller::class, 'index']);
 
     Route::apiResource('signs',SignsController::class);

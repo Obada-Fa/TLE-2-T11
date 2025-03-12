@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\NeutralMiddleware;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -14,6 +15,7 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
         \Illuminate\Foundation\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+       NeutralMiddleware::class,
     ];
 
     protected $middlewareGroups = [
@@ -38,7 +40,7 @@ class Kernel extends HttpKernel
         'api' => \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-
+        'neutral' => NeutralMiddleware::class,
         // ✅ Add your API key middleware here
         'api.key' => \App\Http\Middleware\ApiKeyMiddleware::class,
     ];
