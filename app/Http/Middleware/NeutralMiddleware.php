@@ -11,16 +11,16 @@ class NeutralMiddleware
     /**
      * Handle an incoming request.
      *
-     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
+     * @param \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response) $next
      */
     public function handle(Request $request, Closure $next): Response
     {
 
         $response = $next($request);
-        $response->headers->set('Access-Control-Allow-Origin','*');
-//        $response->headers->set('Access-Control-Allow-Methods','GET,POST,PUT,DELETE,PATCH,OPTIONS');
-        $response->headers->set('Cache-Control',['no-cache','no-store']);
-        $response->headers->set('Content-Type','application/json,html,');
+        $response->headers->set('Access-Control-Allow-Origin', '*');
+        $response->headers->set('Access-Control-Allow-Headers', 'Origin,Content-Type,Accept,Authorization');
+        $response->headers->set('Cache-Control', ['no-cache', 'no-store']);
+        $response->headers->set('Content-Type', 'application/json');
         return $response;
     }
 

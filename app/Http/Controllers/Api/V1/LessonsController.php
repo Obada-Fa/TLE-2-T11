@@ -109,7 +109,7 @@ class LessonsController extends Controller
                 'name' => 'required|string|max:255'
             ]);
             $lesson->name = $updatedData['name'];
-            $lesson->save();
+            $lesson->update();
             //
             $response = response()->json(
                 [
@@ -134,6 +134,7 @@ class LessonsController extends Controller
             $response = response()->json([
                 'message' => "Resource succesfully deleted",
                 $lesson->delete()], 204);
+            $response->headers->set('Access-Control-Allow-Methods', ['DELETE', 'OPTIONS']);
             return $response;
         }
     }

@@ -12,10 +12,17 @@ class AssignmentController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         //
-        return AssignmentResource::collection(Assignment::all());
+        if ($request->isMethod('GET'))
+            $response = response()->json(
+                [
+                    'message' => 'Collection successfully retrieved',
+                    'collection' => AssignmentResource::collection(Assignment::all())
+                ], 200);
+        $response->headers->set('Access-Control-Allow-Methods', ['GET', 'OPTIONS']);
+        return $response;
     }
 
     /**
@@ -31,30 +38,42 @@ class AssignmentController extends Controller
      */
     public function store(Request $request)
     {
-        $validated = $request->validate([
-            'name' => 'required|string|max:255'
-        ]);
-        $assignment = new Assignment();
-        $assignment ->name = $request ->name;
-        $assignment ->save();
+        if ($request->isMethod('POST')) {
+            $validated = $request->validate([
+                'name' => 'required|string|max:255'
+            ]);
+            $assignment = new Assignment();
+            $assignment->name = $request->name;
+            $assignment->save();
 
-        return response()->json([
-            'message'=> 'Assignment succesfully created',
-            'data' => $assignment
-        ],201);
+            $response = response()->json([
+                'message' => 'Assignment succesfully created',
+                'data' => $assignment
+            ], 201);
+            $response->headers->set('Access-Control-Allow-Methods', ['POST', 'OPTIONS']);
+            return $response;
+        }
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Assignment $assignment)
+    public function show(Assignment $assignment, Request $request)
     {
         //
+        if ($request->isMethod('GET')) {
+            $response = response()->json(
+                [
+                    'message' => 'Successfully retrieved the single resource',
+                    'data' => new AssignmentResource($assignment)
+                ], 200);
 //        $assignmentCategories = Assignment::with('categories.signs')->find($assignment);
 //        // In plaats van een new resource toevoegen moet je een collection methode gebruiken omdat
 //        // je anders problemen krijgt net kolommen.
 //        return  AssignmentResource::collection($assignmentCategories);
-        return new AssignmentResource($assignment);
+            $response->headers->set('Access-Control-Allow-Methods', ['GET', 'OPTIONS']);
+            return $response;
+        }
     }
 
     /**
@@ -62,26 +81,34 @@ class AssignmentController extends Controller
      */
     public function update(Request $request, Assignment $assignment)
     {
-        $validated = $request->validate([
-            'name' => 'required|string|max:255'
-        ]);
-        $assignment->update($validated);
+        if ($request->isMethod('PUT')) {
+            $validated = $request->validate([
+                'name' => 'required|string|max:255'
+            ]);
+            $assignment->update($validated);
 
-        return response()->json([
-            'message'=> 'Assignment succesfully edited',
-            'data' => $assignment
-        ],200);
+            $response = response()->json([
+                'message' => 'Assignment successfully edited',
+                'data' => $assignment
+            ], 200);
+            $response->headers->set('Access-Control-Allow-Methods', ['PUT', 'OPTIONS']);
+            return $response;
+        }
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Assignment $assignment)
+    public function destroy(Assignment $assignment, Request $request)
     {
-        $assignment->delete();
+        if ($request->isMethod('DELETE')) {
 
-        return response()->json([
-            'message' => 'Assignment successfully deleted'
-        ]);
+            $assignment->delete();
+            $response = response()->json([
+                'message' => 'Assignment successfully deleted',
+            ],204);
+            $response->headers->set('Access-Control-Allow-Methods', ['DELETE', 'OPTIONS']);
+            return $response;
+        }
     }
 }
