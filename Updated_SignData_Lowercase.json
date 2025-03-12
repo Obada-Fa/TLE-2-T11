@@ -1,0 +1,2494 @@
+[
+    {
+        "title": "Algemeen vraaggebaar",
+        "lesson_id": 1,
+        "category_id": 1,
+        "description": "Een algemeen gebaar voor vragen.",
+        "video": "algemeen_vraag_gebaar.mp4"
+    },
+    {
+        "title": "Hoe",
+        "lesson_id": 1,
+        "category_id": 1,
+        "description": "Een vraagwoord om te vragen naar de manier waarop iets gebeurt.",
+        "video": "hoe.mp4"
+    },
+    {
+        "title": "Hoelang",
+        "lesson_id": 1,
+        "category_id": 1,
+        "description": "Een vraagwoord om te vragen naar een tijdsduur.",
+        "video": "hoelang.mp4"
+    },
+    {
+        "title": "Hoeveel",
+        "lesson_id": 1,
+        "category_id": 1,
+        "description": "Een vraagwoord om te vragen naar een hoeveelheid.",
+        "video": "hoeveel.mp4"
+    },
+    {
+        "title": "Waarom",
+        "lesson_id": 1,
+        "category_id": 1,
+        "description": "Een vraagwoord om te vragen naar een reden.",
+        "video": "waarom.mp4"
+    },
+    {
+        "title": "Wanneer",
+        "lesson_id": 1,
+        "category_id": 1,
+        "description": "Een vraagwoord om te vragen naar tijd.",
+        "video": "wanneer.mp4"
+    },
+    {
+        "title": "Wat",
+        "lesson_id": 1,
+        "category_id": 1,
+        "description": "Een vraagwoord om te vragen naar een object of situatie.",
+        "video": "wat.mp4"
+    },
+    {
+        "title": "Welke",
+        "lesson_id": 1,
+        "category_id": 1,
+        "description": "Een vraagwoord om een keuze aan te geven.",
+        "video": "welke.mp4"
+    },
+    {
+        "title": "Wie",
+        "lesson_id": 1,
+        "category_id": 1,
+        "description": "Een vraagwoord om te vragen naar een persoon.",
+        "video": "wie.mp4"
+    },
+    {
+        "title": "Waar",
+        "lesson_id": 1,
+        "category_id": 1,
+        "description": "Een vraagwoord om te vragen naar een locatie.",
+        "video": "waar.mp4"
+    },
+    {
+        "title": "Aanwezig",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Gebruikt om aanwezigheid aan te geven.",
+        "video": "aanwezig.mp4"
+    },
+    {
+        "title": "Bedoeling",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Gebruikt om intentie of doel aan te geven.",
+        "video": "bedoeling.mp4"
+    },
+    {
+        "title": "Beginnen",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Het starten van een activiteit.",
+        "video": "beginnen.mp4"
+    },
+    {
+        "title": "Boek",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Een voorwerp dat wordt gebruikt om te lezen.",
+        "video": "boek.mp4"
+    },
+    {
+        "title": "Docent",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Een persoon die lesgeeft.",
+        "video": "docent.mp4"
+    },
+    {
+        "title": "Student",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Een persoon die studeert.",
+        "video": "student.mp4"
+    },
+    {
+        "title": "Huiswerk",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Taken die thuis gemaakt moeten worden.",
+        "video": "huiswerk.mp4"
+    },
+    {
+        "title": "Klaar",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Gebruikt om aan te geven dat iets af is.",
+        "video": "klaar.mp4"
+    },
+    {
+        "title": "Koffie",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Een warme drank, vaak gedronken tijdens pauzes.",
+        "video": "koffie.mp4"
+    },
+    {
+        "title": "Les",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Een educatieve sessie.",
+        "video": "les.mp4"
+    },
+    {
+        "title": "Lokaal",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Een ruimte waarin les wordt gegeven.",
+        "video": "lokaal.mp4"
+    },
+    {
+        "title": "Makkelijk",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Gebruikt om aan te geven dat iets eenvoudig is.",
+        "video": "makkelijk.mp4"
+    },
+    {
+        "title": "Meenemen",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Iets met zich meenemen.",
+        "video": "meenemen.mp4"
+    },
+    {
+        "title": "Moeilijk",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Gebruikt om aan te geven dat iets lastig is.",
+        "video": "moeilijk.mp4"
+    },
+    {
+        "title": "Nu",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Aanduiding voor het huidige moment.",
+        "video": "nu.mp4"
+    },
+    {
+        "title": "Ook",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Gebruikt om aan te geven dat iets aanvullend is.",
+        "video": "ook.mp4"
+    },
+    {
+        "title": "Opdracht",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Een taak die uitgevoerd moet worden.",
+        "video": "opdracht.mp4"
+    },
+    {
+        "title": "Pauze",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Een korte onderbreking.",
+        "video": "pauze.mp4"
+    },
+    {
+        "title": "Thee",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Een warme drank.",
+        "video": "thee.mp4"
+    },
+    {
+        "title": "Thuis",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "De plek waar iemand woont.",
+        "video": "thuis.mp4"
+    },
+    {
+        "title": "WC",
+        "lesson_id": 1,
+        "category_id": 2,
+        "description": "Een ruimte met sanitaire voorzieningen.",
+        "video": "wc.mp4"
+    },
+    {
+        "title": "Achternaam",
+        "lesson_id": 1,
+        "category_id": 3,
+        "description": "De achternaam van een persoon.",
+        "video": "achternaam.mp4"
+    },
+    {
+        "title": "Voornaam",
+        "lesson_id": 1,
+        "category_id": 3,
+        "description": "De voornaam van een persoon.",
+        "video": "voornaam.mp4"
+    },
+    {
+        "title": "Naam",
+        "lesson_id": 1,
+        "category_id": 3,
+        "description": "Een manier om de naam van iemand te vragen of te geven.",
+        "video": "naam.mp4"
+    },
+    {
+        "title": "Voorstellen",
+        "lesson_id": 1,
+        "category_id": 3,
+        "description": "Een handeling waarbij je jezelf of anderen introduceert.",
+        "video": "voorstellen.mp4"
+    },
+    {
+        "title": "Welkom",
+        "lesson_id": 1,
+        "category_id": 3,
+        "description": "Een begroeting die je gebruikt om iemand te verwelkomen.",
+        "video": "welkom.mp4"
+    },
+    {
+        "title": "Gaat het goed",
+        "lesson_id": 1,
+        "category_id": 4,
+        "description": "Een vraag om te vragen hoe het gaat.",
+        "video": "gaat het goed.mp4"
+    },
+    {
+        "title": "Goed",
+        "lesson_id": 1,
+        "category_id": 4,
+        "description": "Een antwoord dat aangeeft dat alles in orde is.",
+        "video": "goed.mp4"
+    },
+    {
+        "title": "Hallo",
+        "lesson_id": 1,
+        "category_id": 4,
+        "description": "Een informele begroeting.",
+        "video": "hallo.mp4"
+    },
+    {
+        "title": "OK",
+        "lesson_id": 1,
+        "category_id": 4,
+        "description": "Een bevestiging dat alles goed is.",
+        "video": "ok.mp4"
+    },
+    {
+        "title": "Prima",
+        "lesson_id": 1,
+        "category_id": 4,
+        "description": "Een antwoord dat aangeeft dat het goed gaat.",
+        "video": "prima.mp4"
+    },
+    {
+        "title": "Tot ziens",
+        "lesson_id": 1,
+        "category_id": 4,
+        "description": "Een afscheidsgroet.",
+        "video": "tot ziens.mp4"
+    },
+    {
+        "title": "Tot ziens groep",
+        "lesson_id": 1,
+        "category_id": 4,
+        "description": "Een afscheidsgroet voor een groep.",
+        "video": "tot ziens groep.mp4"
+    },
+    {
+        "title": "Goedemorgen",
+        "lesson_id": 1,
+        "category_id": 4,
+        "description": "Een begroeting die in de ochtend gebruikt wordt.",
+        "video": "goedemorgen.mp4"
+    },
+    {
+        "title": "Goedemiddag",
+        "lesson_id": 1,
+        "category_id": 4,
+        "description": "Een begroeting die in de middag gebruikt wordt.",
+        "video": "goedemiddag.mp4"
+    },
+    {
+        "title": "Goedeavond",
+        "lesson_id": 1,
+        "category_id": 4,
+        "description": "Een begroeting die in de avond gebruikt wordt.",
+        "video": "goedeavond.mp4"
+    },
+    {
+        "title": "Antwoorden",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Een reactie geven op een vraag.",
+        "video": "antwoorden.mp4"
+    },
+    {
+        "title": "Lezen",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Iets lezen, bijvoorbeeld tekst.",
+        "video": "lezen.mp4"
+    },
+    {
+        "title": "Willen",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Een wens of verlangen uiten.",
+        "video": "willen.mp4"
+    },
+    {
+        "title": "Doen",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Een handeling uitvoeren.",
+        "video": "doen.mp4"
+    },
+    {
+        "title": "Vergeten",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Iets niet herinneren.",
+        "video": "vergeten.mp4"
+    },
+    {
+        "title": "Zeggen",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Een uitspraak doen.",
+        "video": "zeggen.mp4"
+    },
+    {
+        "title": "Geven",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Iets overdragen aan iemand.",
+        "video": "geven.mp4"
+    },
+    {
+        "title": "Oefenen",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Een vaardigheid herhalen om beter te worden.",
+        "video": "oefenen.mp4"
+    },
+    {
+        "title": "Zitten",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "In een zittende positie zijn.",
+        "video": "zitten.mp4"
+    },
+    {
+        "title": "Hebben",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Bezit of eigendom van iets hebben.",
+        "video": "hebben.mp4"
+    },
+    {
+        "title": "Onthouden",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Iets in je geheugen bewaren.",
+        "video": "onthouden.mp4"
+    },
+    {
+        "title": "Vragen",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Een vraag stellen.",
+        "video": "vragen.mp4"
+    },
+    {
+        "title": "Helpen",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Assisteren of bijstaan.",
+        "video": "helpen.mp4"
+    },
+    {
+        "title": "Opruimen",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Het netjes maken van een ruimte.",
+        "video": "opruimen.mp4"
+    },
+    {
+        "title": "Kijken",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Je ogen gebruiken om iets te zien.",
+        "video": "kijken.mp4"
+    },
+    {
+        "title": "Vertellen",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Informatie delen door middel van spreken.",
+        "video": "vertellen.mp4"
+    },
+    {
+        "title": "Kunnen / Kan",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Iets in staat zijn te doen.",
+        "video": "kunnen_kan.mp4"
+    },
+    {
+        "title": "Proberen",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Iets proberen uit te voeren.",
+        "video": "proberen.mp4"
+    },
+    {
+        "title": "Leren",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Nieuwe kennis of vaardigheden verwerven.",
+        "video": "leren.mp4"
+    },
+    {
+        "title": "Schrijven",
+        "lesson_id": 2,
+        "category_id": 5,
+        "description": "Tekst maken met pen of potlood.",
+        "video": "schrijven.mp4"
+    },
+        {
+            "title": "Alsjeblieft (iets geven)",
+            "lesson_id": 2,
+            "category_id": 6,
+            "description": "Gebruikt bij het geven van iets aan iemand.",
+            "video": "alsjeblieft_(iets_gevan).mp4"
+        },
+        {
+            "title": "Klopt",
+            "lesson_id": 2,
+            "category_id": 6,
+            "description": "Bevestigen dat iets juist is.",
+            "video": "klopt.mp4"
+        },
+        {
+            "title": "Vervelend",
+            "lesson_id": 2,
+            "category_id": 6,
+            "description": "Iets negatiefs of ongemakkelijks aanduiden.",
+            "video": "vervelend.mp4"
+        },
+        {
+            "title": "Alsjeblieft (verzoek)",
+            "lesson_id": 2,
+            "category_id": 6,
+            "description": "Gebruikt bij het doen van een verzoek.",
+            "video": "alsjeblieft_(verzoek).mp4"
+        },
+        {
+            "title": "Klopt-niet",
+            "lesson_id": 2,
+            "category_id": 6,
+            "description": "Bevestigen dat iets niet juist is.",
+            "video": "klopt_niet.mp4"
+        },
+        {
+            "title": "Vreselijk",
+            "lesson_id": 2,
+            "category_id": 6,
+            "description": "Iets heel erg negatiefs aanduiden.",
+            "video": "vreselijk.mp4"
+        },
+        {
+            "title": "Bedankt",
+            "lesson_id": 2,
+            "category_id": 6,
+            "description": "Een uitdrukking van dankbaarheid.",
+            "video": "bedankt.mp4"
+        },
+        {
+            "title": "Leuk",
+            "lesson_id": 2,
+            "category_id": 6,
+            "description": "Een positieve reactie of oordeel geven.",
+            "video": "leuk.mp4"
+        },
+        {
+            "title": "Ik begrijp het",
+            "lesson_id": 2,
+            "category_id": 6,
+            "description": "Bevestigen dat je iets hebt begrepen.",
+            "video": "ik_begrijp_het.mp4"
+        },
+        {
+            "title": "Opnieuw",
+            "lesson_id": 2,
+            "category_id": 6,
+            "description": "Iets herhalen of opnieuw doen.",
+            "video": "opnieuw.mp4"
+        },
+        {
+            "title": "Ik begrijp het niet",
+            "lesson_id": 2,
+            "category_id": 6,
+            "description": "Bevestigen dat je iets niet hebt begrepen.",
+            "video": "ik_begrijp_het_niet.mp4"
+        },
+        {
+            "title": "Sorry",
+            "lesson_id": 2,
+            "category_id": 6,
+            "description": "Een verontschuldiging uiten.",
+            "video": "sorry.mp4"
+        },
+        {
+            "title": "Jammer",
+            "lesson_id": 2,
+            "category_id": 6,
+            "description": "Een uitdrukking van teleurstelling of medeleven.",
+            "video": "jammer.mp4"
+        },
+        {
+            "title": "Spannend",
+            "lesson_id": 2,
+            "category_id": 6,
+            "description": "Iets dat een gevoel van spanning oproept.",
+            "video": "spannend.mp4"
+        },
+        {
+            "title": "Bang",
+            "lesson_id": 2,
+            "category_id": 7,
+            "description": "Een gevoel van angst of vrees.",
+            "video": "bang.mp4"
+        },
+        {
+            "title": "Opgelucht",
+            "lesson_id": 2,
+            "category_id": 7,
+            "description": "Een gevoel van verlichting of ontspanning.",
+            "video": "opgelucht.mp4"
+        },
+        {
+            "title": "Blij",
+            "lesson_id": 2,
+            "category_id": 7,
+            "description": "Een gevoel van vreugde of geluk.",
+            "video": "blij.mp4"
+        },
+        {
+            "title": "Verdrietig",
+            "lesson_id": 2,
+            "category_id": 7,
+            "description": "Een gevoel van droefheid of verlies.",
+            "video": "verdrietig.mp4"
+        },
+        {
+            "title": "Boos",
+            "lesson_id": 2,
+            "category_id": 7,
+            "description": "Een gevoel van woede of frustratie.",
+            "video": "boos.mp4"
+        },
+        {
+            "title": "Zenuwachtig",
+            "lesson_id": 2,
+            "category_id": 7,
+            "description": "Een gevoel van spanning of nervositeit.",
+            "video": "zenuwachtig.mp4"
+        },
+    {
+        "title": "1",
+        "lesson_id": 2,
+        "category_id": 8,
+        "description": "Het cijfer 1.",
+        "video": "1.mp4"
+    },
+    {
+        "title": "2",
+        "lesson_id": 2,
+        "category_id": 8,
+        "description": "Het cijfer 2.",
+        "video": "2.mp4"
+    },
+    {
+        "title": "3",
+        "lesson_id": 2,
+        "category_id": 8,
+        "description": "Het cijfer 3.",
+        "video": "3.mp4"
+    },
+    {
+        "title": "4",
+        "lesson_id": 2,
+        "category_id": 8,
+        "description": "Het cijfer 4.",
+        "video": "4.mp4"
+    },
+    {
+        "title": "5",
+        "lesson_id": 2,
+        "category_id": 8,
+        "description": "Het cijfer 5.",
+        "video": "5.mp4"
+    },
+    {
+        "title": "6",
+        "lesson_id": 2,
+        "category_id": 8,
+        "description": "Het cijfer 6.",
+        "video": "6.mp4"
+    },
+    {
+        "title": "7",
+        "lesson_id": 2,
+        "category_id": 8,
+        "description": "Het cijfer 7.",
+        "video": "7.mp4"
+    },
+    {
+        "title": "8",
+        "lesson_id": 2,
+        "category_id": 8,
+        "description": "Het cijfer 8.",
+        "video": "8.mp4"
+    },
+    {
+        "title": "9",
+        "lesson_id": 2,
+        "category_id": 8,
+        "description": "Het cijfer 9.",
+        "video": "9.mp4"
+    },
+    {
+        "title": "10",
+        "lesson_id": 2,
+        "category_id": 8,
+        "description": "Het cijfer 10.",
+        "video": "10.mp4"
+    },
+    {
+        "title": "11",
+        "lesson_id": 2,
+        "category_id": 8,
+        "description": "Het cijfer 11.",
+        "video": "11.mp4"
+    },
+    {
+        "title": "12",
+        "lesson_id": 2,
+        "category_id": 8,
+        "description": "Het cijfer 12.",
+        "video": "12.mp4"
+    },
+    {
+        "title": "Ochtend",
+        "lesson_id": 3,
+        "category_id": 9,
+        "description": "Het begin van de dag, van zonsopgang tot middag.",
+        "video": "ochtend.mp4"
+    },
+    {
+        "title": "Middag",
+        "lesson_id": 3,
+        "category_id": 9,
+        "description": "De tijd van de dag tussen de ochtend en avond.",
+        "video": "middag.mp4"
+    },
+    {
+        "title": "Avond",
+        "lesson_id": 3,
+        "category_id": 9,
+        "description": "De tijd van de dag na de middag en voor de nacht.",
+        "video": "avond.mp4"
+    },
+    {
+        "title": "Nacht",
+        "lesson_id": 3,
+        "category_id": 9,
+        "description": "De periode van de dag waarin het donker is, meestal van de avond tot de ochtend.",
+        "video": "nacht.mp4"
+    },
+    {
+        "title": "Vanavond",
+        "lesson_id": 3,
+        "category_id": 9,
+        "description": "De komende avond, of de avond van vandaag.",
+        "video": "vanavond.mp4"
+    },
+    {
+        "title": "Vanmorgen",
+        "lesson_id": 3,
+        "category_id": 9,
+        "description": "De ochtend van vandaag.",
+        "video": "vanmorgen.mp4"
+    },
+    {
+        "title": "Vanmiddag",
+        "lesson_id": 3,
+        "category_id": 9,
+        "description": "De middag van vandaag.",
+        "video": "vanmiddag.mp4"
+    },
+    {
+        "title": "Vannacht",
+        "lesson_id": 3,
+        "category_id": 9,
+        "description": "De nacht van vandaag.",
+        "video": "vannacht.mp4"
+    },
+    {
+        "title": "Januari",
+        "lesson_id": 3,
+        "category_id": 10,
+        "description": "De eerste maand van het jaar.",
+        "video": "januari.mp4"
+    },
+    {
+        "title": "Februari",
+        "lesson_id": 3,
+        "category_id": 10,
+        "description": "De tweede maand van het jaar.",
+        "video": "februari.mp4"
+    },
+    {
+        "title": "Maart",
+        "lesson_id": 3,
+        "category_id": 10,
+        "description": "De derde maand van het jaar.",
+        "video": "maart.mp4"
+    },
+    {
+        "title": "April",
+        "lesson_id": 3,
+        "category_id": 10,
+        "description": "De vierde maand van het jaar.",
+        "video": "april.mp4"
+    },
+    {
+        "title": "Mei",
+        "lesson_id": 3,
+        "category_id": 10,
+        "description": "De vijfde maand van het jaar.",
+        "video": "mei.mp4"
+    },
+    {
+        "title": "Juni",
+        "lesson_id": 3,
+        "category_id": 10,
+        "description": "De zesde maand van het jaar.",
+        "video": "juni.mp4"
+    },
+    {
+        "title": "Juli",
+        "lesson_id": 3,
+        "category_id": 10,
+        "description": "De zevende maand van het jaar.",
+        "video": "juli.mp4"
+    },
+    {
+        "title": "Augustus",
+        "lesson_id": 3,
+        "category_id": 10,
+        "description": "De achtste maand van het jaar.",
+        "video": "augustus.mp4"
+    },
+    {
+        "title": "September",
+        "lesson_id": 3,
+        "category_id": 10,
+        "description": "De negende maand van het jaar.",
+        "video": "september.mp4"
+    },
+    {
+        "title": "Oktober",
+        "lesson_id": 3,
+        "category_id": 10,
+        "description": "De tiende maand van het jaar.",
+        "video": "oktober.mp4"
+    },
+    {
+        "title": "November",
+        "lesson_id": 3,
+        "category_id": 10,
+        "description": "De elfde maand van het jaar.",
+        "video": "november.mp4"
+    },
+    {
+        "title": "December",
+        "lesson_id": 3,
+        "category_id": 10,
+        "description": "De twaalfde maand van het jaar.",
+        "video": "december.mp4"
+    },
+    {
+        "title": "Maandag",
+        "lesson_id": 3,
+        "category_id": 11,
+        "description": "De eerste dag van de week.",
+        "video": "maandag.mp4"
+    },
+    {
+        "title": "Dinsdag",
+        "lesson_id": 3,
+        "category_id": 11,
+        "description": "De tweede dag van de week.",
+        "video": "dinsdag.mp4"
+    },
+    {
+        "title": "Woensdag",
+        "lesson_id": 3,
+        "category_id": 11,
+        "description": "De derde dag van de week.",
+        "video": "woensdag.mp4"
+    },
+    {
+        "title": "Donderdag",
+        "lesson_id": 3,
+        "category_id": 11,
+        "description": "De vierde dag van de week.",
+        "video": "donderdag.mp4"
+    },
+    {
+        "title": "Vrijdag",
+        "lesson_id": 3,
+        "category_id": 11,
+        "description": "De vijfde dag van de week.",
+        "video": "vrijdag.mp4"
+    },
+    {
+        "title": "Zaterdag",
+        "lesson_id": 3,
+        "category_id": 11,
+        "description": "De zesde dag van de week.",
+        "video": "zaterdag.mp4"
+    },
+    {
+        "title": "Zondag",
+        "lesson_id": 3,
+        "category_id": 11,
+        "description": "De zevende dag van de week.",
+        "video": "zondag.mp4"
+    },
+    {
+        "title": "Dag",
+        "lesson_id": 3,
+        "category_id": 11,
+        "description": "Een periode van 24 uur.",
+        "video": "dag.mp4"
+    },
+    {
+        "title": "Maand",
+        "lesson_id": 3,
+        "category_id": 11,
+        "description": "Een periode van ongeveer vier weken.",
+        "video": "maand.mp4"
+    },
+    {
+        "title": "Week",
+        "lesson_id": 3,
+        "category_id": 11,
+        "description": "Een periode van zeven dagen.",
+        "video": "week.mp4"
+    },
+    {
+        "title": "Weekend",
+        "lesson_id": 3,
+        "category_id": 11,
+        "description": "De laatste twee dagen van de week, meestal zaterdag en zondag.",
+        "video": "weekend.mp4"
+    },
+    {
+        "title": "Jaar",
+        "lesson_id": 3,
+        "category_id": 11,
+        "description": "Een periode van 12 maanden.",
+        "video": "jaar.mp4"
+    },
+    {
+        "title": "Afgesproken",
+        "lesson_id": 3,
+        "category_id": 12,
+        "description": "Een afspraak is bevestigd.",
+        "video": "afgesproken.mp4"
+    },
+    {
+        "title": "Gisteren",
+        "lesson_id": 3,
+        "category_id": 12,
+        "description": "De dag voor vandaag.",
+        "video": "gisteren.mp4"
+    },
+    {
+        "title": "Nadenken",
+        "lesson_id": 3,
+        "category_id": 12,
+        "description": "Het proces van denken om tot een beslissing te komen.",
+        "video": "nadenken.mp4"
+    },
+    {
+        "title": "Afspraak",
+        "lesson_id": 3,
+        "category_id": 12,
+        "description": "Een geplande ontmoeting.",
+        "video": "afspraak.mp4"
+    },
+    {
+        "title": "Eergisteren",
+        "lesson_id": 3,
+        "category_id": 12,
+        "description": "De dag twee dagen geleden.",
+        "video": "eergisteren.mp4"
+    },
+    {
+        "title": "Terug (komen)",
+        "lesson_id": 3,
+        "category_id": 12,
+        "description": "Weer terugkomen op een afspraak of plaats.",
+        "video": "terug_(komen).mp4"
+    },
+    {
+        "title": "Afspreken",
+        "lesson_id": 3,
+        "category_id": 12,
+        "description": "Een afspraak plannen.",
+        "video": "afspreken.mp4"
+    },
+    {
+        "title": "Het maakt niet uit",
+        "lesson_id": 3,
+        "category_id": 12,
+        "description": "Iets is niet belangrijk of van invloed op de beslissing.",
+        "video": "het_maakt_niet_uit.mp4"
+    },
+    {
+        "title": "Vandaag",
+        "lesson_id": 3,
+        "category_id": 12,
+        "description": "De huidige dag.",
+        "video": "vandaag.mp4"
+    },
+    {
+        "title": "Agenda",
+        "lesson_id": 3,
+        "category_id": 12,
+        "description": "Een overzicht van geplande afspraken.",
+        "video": "agenda.mp4"
+    },
+    {
+        "title": "Morgen",
+        "lesson_id": 3,
+        "category_id": 12,
+        "description": "De dag na vandaag.",
+        "video": "morgen.mp4"
+    },
+    {
+        "title": "Vrij",
+        "lesson_id": 3,
+        "category_id": 12,
+        "description": "Een moment waarin je geen verplichtingen hebt.",
+        "video": "vrij.mp4"
+    },
+    {
+        "title": "Gelukt",
+        "lesson_id": 3,
+        "category_id": 12,
+        "description": "Wanneer iets is gelukt of succesvol is uitgevoerd.",
+        "video": "gelukt.mp4"
+    },
+    {
+        "title": "Overmorgen",
+        "lesson_id": 3,
+        "category_id": 12,
+        "description": "De dag na morgen.",
+        "video": "overmorgen.mp4"
+    },
+    {
+        "title": "Andere",
+        "lesson_id": 3,
+        "category_id": 12,
+        "description": "Iets anders dan wat er is genoemd.",
+        "video": "andere.mp4"
+    },
+    {
+        "title": "Datum",
+        "lesson_id": 3,
+        "category_id": 12,
+        "description": "De specifieke dag van een gebeurtenis.",
+        "video": "datum.mp4"
+    },
+    {
+        "title": "Alg. Vraaggebaar",
+        "lesson_id": 3,
+        "category_id": 1,
+        "description": "Een algemeen gebaar voor vragen.",
+        "video": "algemeen_vraag_gebaar.mp4"
+    },
+    {
+        "title": "Waarom",
+        "lesson_id": 3,
+        "category_id": 1,
+        "description": "Een vraag naar de reden of oorzaak.",
+        "video": "waarom.mp4"
+    },
+    {
+        "title": "Wie",
+        "lesson_id": 3,
+        "category_id": 1,
+        "description": "Een vraag naar een persoon.",
+        "video": "wie.mp4"
+    },
+    {
+        "title": "Hoe",
+        "lesson_id": 3,
+        "category_id": 1,
+        "description": "Een vraag naar de manier waarop iets gebeurt.",
+        "video": "hoe.mp4"
+    },
+    {
+        "title": "Wanneer",
+        "lesson_id": 3,
+        "category_id": 1,
+        "description": "Een vraag naar tijd of datum.",
+        "video": "wanneer.mp4"
+    },
+    {
+        "title": "Waar",
+        "lesson_id": 3,
+        "category_id": 1,
+        "description": "Een vraag naar locatie.",
+        "video": "waar.mp4"
+    },
+    {
+        "title": "Hoelang",
+        "lesson_id": 3,
+        "category_id": 1,
+        "description": "Een vraag naar de duur van iets.",
+        "video": "hoelang.mp4"
+    },
+    {
+        "title": "Wat",
+        "lesson_id": 3,
+        "category_id": 1,
+        "description": "Een vraag naar een ding of object.",
+        "video": "wat.mp4"
+    },
+    {
+        "title": "Hoe laat?",
+        "lesson_id": 3,
+        "category_id": 1,
+        "description": "Een vraag naar het tijdstip van iets.",
+        "video": "hoe_laat.mp4"
+    },
+    {
+        "title": "Hoeveel",
+        "lesson_id": 3,
+        "category_id": 1,
+        "description": "Een vraag naar de hoeveelheid of het aantal.",
+        "video": "hoeveel.mp4"
+    },
+    {
+        "title": "Welke",
+        "lesson_id": 3,
+        "category_id": 1,
+        "description": "Een vraag naar een keuze of selectie.",
+        "video": "welke.mp4"
+    },
+    {
+        "title": "13 t/m 20",
+        "lesson_id": 4,
+        "category_id": 13,
+        "description": "13 van 13 tot 20.",
+        "video": "13_tm_20.mp4"
+    },
+    {
+        "title": "Cijfer",
+        "lesson_id": 4,
+        "category_id": 13,
+        "description": "Een symbool voor een getal.",
+        "video": "cijfer.mp4"
+    },
+    {
+        "title": "21 t/m 30",
+        "lesson_id": 4,
+        "category_id": 13,
+        "description": "13 van 21 tot 30.",
+        "video": "21_tm_30.mp4"
+    },
+    {
+        "title": "Datum",
+        "lesson_id": 4,
+        "category_id": 13,
+        "description": "De specifieke dag, maand en jaar.",
+        "video": "datum.mp4"
+    },
+    {
+        "title": "20, 30, 40, .. 100",
+        "lesson_id": 4,
+        "category_id": 13,
+        "description": "13 van 20, 30, 40 tot 100.",
+        "video": "20_30_40_100.mp4"
+    },
+    {
+        "title": "Geboren",
+        "lesson_id": 4,
+        "category_id": 13,
+        "description": "Het moment van geboorte.",
+        "video": "geboren.mp4"
+    },
+    {
+        "title": "22, 33, 44, .. 99",
+        "lesson_id": 4,
+        "category_id": 13,
+        "description": "13 van 22, 33, 44 tot 99.",
+        "video": "22_33_44_99.mp4"
+    },
+    {
+        "title": "Jarig",
+        "lesson_id": 4,
+        "category_id": 13,
+        "description": "Het vieren van je verjaardag.",
+        "video": "jarig.mp4"
+    },
+    {
+        "title": "Tellen",
+        "lesson_id": 4,
+        "category_id": 13,
+        "description": "Het opnoemen van getallen in volgorde.",
+        "video": "tellen.mp4"
+    },
+    {
+        "title": "Hoe-oud?",
+        "lesson_id": 4,
+        "category_id": 13,
+        "description": "Vraag naar de leeftijd.",
+        "video": "hoe_oud.mp4"
+    },
+    {
+        "title": "1 uur lang, 2 uur lang",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "De tijdsduur van 1 of 2 uur.",
+        "video": "1_uur_lang_2_uur_lang.mp4"
+    },
+    {
+        "title": "Half uur lang",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "De tijdsduur van een half uur.",
+        "video": "half_uur_lang.mp4"
+    },
+    {
+        "title": "Kwartier",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "Een tijdsduur van 15 minuten.",
+        "video": "kwartier.mp4"
+    },
+    {
+        "title": "1 uur, 2 uur",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "De tijdsaanduiding van 1 of 2 uur.",
+        "video": "1_uur_2_uur.mp4"
+    },
+    {
+        "title": "Horloge",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "Een apparaat om de tijd mee te meten.",
+        "video": "horloge.mp4"
+    },
+    {
+        "title": "Later",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "Na een bepaalde tijd.",
+        "video": "later.mp4"
+    },
+    {
+        "title": "10 minuten over 1/2/3",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "10 minuten voorbij het uur van 1, 2, of 3.",
+        "video": "10_minuten_over_1_2_3.mp4"
+    },
+    {
+        "title": "Klok",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "Het instrument dat de tijd aangeeft.",
+        "video": "klok.mp4"
+    },
+    {
+        "title": "Minuut",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "Een tijdseenheid, 60 seconden.",
+        "video": "minuut.mp4"
+    },
+    {
+        "title": "10 minuten voor 1/2/3",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "10 minuten voor het uur van 1, 2, of 3.",
+        "video": "10_minuten_voor_1_2_3.mp4"
+    },
+    {
+        "title": "Kwart over (rechtshandig)",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "15 minuten over een uur, met de klok mee.",
+        "video": "kwart_over_rechtshandig.mp4"
+    },
+    {
+        "title": "Nooit",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "Geen tijd of mogelijkheid voor iets.",
+        "video": "nooit.mp4"
+    },
+    {
+        "title": "Altijd",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "Op elk moment, zonder uitzondering.",
+        "video": "altijd.mp4"
+    },
+    {
+        "title": "Kwarter over (linkshandig)",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "15 minuten over een uur, tegen de klok in.",
+        "video": "kwarter_over_linkshandig.mp4"
+    },
+    {
+        "title": "Tijd",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "Het meten van momenten en uren.",
+        "video": "tijd.mp4"
+    },
+    {
+        "title": "Eerder",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "Een eerder moment in de tijd.",
+        "video": "eerder.mp4"
+    },
+    {
+        "title": "Kwarter voor (rechtshandig)",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "15 minuten voor een uur, met de klok mee.",
+        "video": "kwarter_voor_rechtshandig.mp4"
+    },
+    {
+        "title": "Uur",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "Een tijdseenheid van 60 minuten.",
+        "video": "uur.mp4"
+    },
+    {
+        "title": "Half 1, Half 2",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "De tijden van half één en half twee.",
+        "video": "half_1_half_2.mp4"
+    },
+    {
+        "title": "Kwarter voor (linkshandig)",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "15 minuten voor een uur, tegen de klok in.",
+        "video": "kwarter_voor_linkshandig.mp4"
+    },
+    {
+        "title": "Apotheek",
+        "lesson_id": 5,
+        "category_id": 15,
+        "description": "Een winkel waar medicijnen worden verkocht.",
+        "video": "apotheek.mp4"
+    },
+    {
+        "title": "Gezond (zijn)",
+        "lesson_id": 5,
+        "category_id": 15,
+        "description": "In goede gezondheid verkeren.",
+        "video": "gezond_zijn.mp4"
+    },
+    {
+        "title": "Tandarts",
+        "lesson_id": 5,
+        "category_id": 15,
+        "description": "Een arts die zich bezighoudt met het verzorgen van tanden.",
+        "video": "tandarts.mp4"
+    },
+    {
+        "title": "Assistente",
+        "lesson_id": 5,
+        "category_id": 15,
+        "description": "Een persoon die ondersteunt in de medische praktijk.",
+        "video": "assistente.mp4"
+    },
+    {
+        "title": "Huisarts",
+        "lesson_id": 5,
+        "category_id": 15,
+        "description": "Een arts die algemene medische zorg biedt.",
+        "video": "huisarts.mp4"
+    },
+    {
+        "title": "Wachtkamer",
+        "lesson_id": 5,
+        "category_id": 15,
+        "description": "Een kamer waar patiënten wachten op hun afspraak.",
+        "video": "wachtkamer.mp4"
+    },
+    {
+        "title": "Beter (zijn)",
+        "lesson_id": 5,
+        "category_id": 15,
+        "description": "Gezond zijn na ziekte.",
+        "video": "beter_zijn.mp4"
+    },
+    {
+        "title": "Medicijnen",
+        "lesson_id": 5,
+        "category_id": 15,
+        "description": "Geneesmiddelen die worden voorgeschreven door een arts.",
+        "video": "medicijnen.mp4"
+    },
+    {
+        "title": "Ziek (zijn)",
+        "lesson_id": 5,
+        "category_id": 15,
+        "description": "In een slechte gezondheid verkeren.",
+        "video": "ziek_zijn.mp4"
+    },
+    {
+        "title": "Beter-gaan",
+        "lesson_id": 5,
+        "category_id": 15,
+        "description": "Verbeteren in gezondheid.",
+        "video": "beter_gaan.mp4"
+    },
+    {
+        "title": "Patiënt",
+        "lesson_id": 5,
+        "category_id": 15,
+        "description": "Iemand die medische zorg ontvangt.",
+        "video": "patiënt.mp4"
+    },
+    {
+        "title": "Doorverwijzen",
+        "lesson_id": 5,
+        "category_id": 15,
+        "description": "Verwijzen naar een andere arts voor verder onderzoek.",
+        "video": "doorverwijzen.mp4"
+    },
+    {
+        "title": "Recept",
+        "lesson_id": 5,
+        "category_id": 15,
+        "description": "Een document waarin een arts medicijnen voorschrijft.",
+        "video": "recept.mp4"
+    },
+    {
+        "title": "Adres",
+        "lesson_id": 5,
+        "category_id": 16,
+        "description": "Het woonadres van iemand.",
+        "video": "adres.mp4"
+    },
+    {
+        "title": "Geborenplaats",
+        "lesson_id": 5,
+        "category_id": 16,
+        "description": "De plaats waar iemand is geboren.",
+        "video": "geborenplaats.mp4"
+    },
+    {
+        "title": "Telefoonnummer",
+        "lesson_id": 5,
+        "category_id": 16,
+        "description": "Een nummer om iemand telefonisch te bereiken.",
+        "video": "telefoonnummer.mp4"
+    },
+    {
+        "title": "Beroep",
+        "lesson_id": 5,
+        "category_id": 16,
+        "description": "Het werk dat iemand doet.",
+        "video": "beroep.mp4"
+    },
+    {
+        "title": "Klacht",
+        "lesson_id": 5,
+        "category_id": 16,
+        "description": "Een probleem of ongemak dat iemand heeft.",
+        "video": "klacht.mp4"
+    },
+    {
+        "title": "Woonplaats",
+        "lesson_id": 5,
+        "category_id": 16,
+        "description": "De plaats waar iemand woont.",
+        "video": "woonplaats.mp4"
+    },
+    {
+        "title": "Dokter",
+        "lesson_id": 5,
+        "category_id": 16,
+        "description": "Een medische professional die iemand behandelt.",
+        "video": "dokter.mp4"
+    },
+    {
+        "title": "Oorzaak",
+        "lesson_id": 5,
+        "category_id": 16,
+        "description": "De reden waarom iets gebeurt.",
+        "video": "oorzaak.mp4"
+    },
+    {
+        "title": "Zorgverzekering",
+        "lesson_id": 5,
+        "category_id": 16,
+        "description": "Een verzekering voor medische kosten.",
+        "video": "zorgverzekering.mp4"
+    },
+    {
+        "title": "Duur",
+        "lesson_id": 5,
+        "category_id": 16,
+        "description": "Hoe lang iets duurt.",
+        "video": "duur.mp4"
+    },
+    {
+        "title": "Operatie",
+        "lesson_id": 5,
+        "category_id": 16,
+        "description": "Een medische ingreep die door een arts wordt uitgevoerd.",
+        "video": "operatie.mp4"
+    },
+    {
+        "title": "Geboortedatum",
+        "lesson_id": 5,
+        "category_id": 16,
+        "description": "De datum waarop iemand geboren is.",
+        "video": "geboortedatum.mp4"
+    },
+    {
+        "title": "Probleem",
+        "lesson_id": 5,
+        "category_id": 16,
+        "description": "Iets dat niet goed gaat met de gezondheid.",
+        "video": "probleem.mp4"
+    },
+    {
+        "title": "Amsterdam",
+        "lesson_id": 5,
+        "category_id": 17,
+        "description": "De hoofdstad van Nederland.",
+        "video": "amsterdam.mp4"
+    },
+    {
+        "title": "Den Haag",
+        "lesson_id": 5,
+        "category_id": 17,
+        "description": "De politieke hoofdstad van Nederland.",
+        "video": "denhaag.mp4"
+    },
+    {
+        "title": "Schiedam",
+        "lesson_id": 5,
+        "category_id": 17,
+        "description": "Een stad in de provincie Zuid-Holland.",
+        "video": "schiedam.mp4"
+    },
+    {
+        "title": "Breda",
+        "lesson_id": 5,
+        "category_id": 17,
+        "description": "Een stad in het zuiden van Nederland.",
+        "video": "breda.mp4"
+    },
+    {
+        "title": "Rotterdam",
+        "lesson_id": 5,
+        "category_id": 17,
+        "description": "Een grote stad in Zuid-Holland.",
+        "video": "rotterdam.mp4"
+    },
+    {
+        "title": "Zoetermeer",
+        "lesson_id": 5,
+        "category_id": 17,
+        "description": "Een stad in Zuid-Holland, nabij Den Haag.",
+        "video": "zoetermeer.mp4"
+    },
+    {
+        "title": "Gezin",
+        "lesson_id": 5,
+        "category_id": 18,
+        "description": "De mensen die samen in een huishouden wonen.",
+        "video": "gezin.mp4"
+    },
+    {
+        "title": "Familie",
+        "lesson_id": 5,
+        "category_id": 18,
+        "description": "De mensen die verwant zijn door bloed of huwelijk.",
+        "video": "familie.mp4"
+    },
+    {
+        "title": "Vader",
+        "lesson_id": 5,
+        "category_id": 18,
+        "description": "De mannelijke ouder van een kind.",
+        "video": "vader.mp4"
+    },
+    {
+        "title": "Moeder",
+        "lesson_id": 5,
+        "category_id": 18,
+        "description": "De vrouwelijke ouder van een kind.",
+        "video": "moeder.mp4"
+    },
+    {
+        "title": "Ouders",
+        "lesson_id": 5,
+        "category_id": 18,
+        "description": "De vader en moeder van een kind.",
+        "video": "ouders.mp4"
+    },
+    {
+        "title": "Zoon",
+        "lesson_id": 5,
+        "category_id": 18,
+        "description": "Een mannelijke nakomeling van ouders.",
+        "video": "zoon.mp4"
+    },
+    {
+        "title": "Dochter",
+        "lesson_id": 5,
+        "category_id": 18,
+        "description": "Een vrouwelijke nakomeling van ouders.",
+        "video": "dochter.mp4"
+    },
+    {
+        "title": "Kind",
+        "lesson_id": 5,
+        "category_id": 18,
+        "description": "Een nakomeling van ouders, een jong persoon.",
+        "video": "kind.mp4"
+    },
+    {
+        "title": "Kinderen",
+        "lesson_id": 5,
+        "category_id": 18,
+        "description": "Meerdere nakomelingen van ouders.",
+        "video": "kinderen.mp4"
+    },
+    {
+        "title": "Getrouwd",
+        "lesson_id": 5,
+        "category_id": 19,
+        "description": "In een huwelijk met iemand.",
+        "video": "getrouwd.mp4"
+    },
+    {
+        "title": "Samenwonen",
+        "lesson_id": 5,
+        "category_id": 19,
+        "description": "Met iemand in hetzelfde huis wonen zonder te trouwen.",
+        "video": "samenwonen.mp4"
+    },
+    {
+        "title": "Vrijgezel",
+        "lesson_id": 5,
+        "category_id": 19,
+        "description": "Niet getrouwd of in een relatie.",
+        "video": "vrijgezel.mp4"
+    },
+    {
+        "title": "Vrouw (relatie)",
+        "lesson_id": 5,
+        "category_id": 19,
+        "description": "De vrouwelijke partner in een relatie.",
+        "video": "vrouw_relatie.mp4"
+    },
+    {
+        "title": "Vrouw (platonisch)",
+        "lesson_id": 5,
+        "category_id": 19,
+        "description": "Een vrouw met wie je geen romantische relatie hebt.",
+        "video": "vrouw_platonisch.mp4"
+    },
+    {
+        "title": "Man (relatie)",
+        "lesson_id": 5,
+        "category_id": 19,
+        "description": "De mannelijke partner in een relatie.",
+        "video": "man_relatie.mp4"
+    },
+    {
+        "title": "Man (platonisch)",
+        "lesson_id": 5,
+        "category_id": 19,
+        "description": "Een man met wie je geen romantische relatie hebt.",
+        "video": "man_platonisch.mp4"
+    },
+    {
+        "title": "Vriend (relatie)",
+        "lesson_id": 5,
+        "category_id": 19,
+        "description": "Een mannelijke vriend met wie je een romantische relatie hebt.",
+        "video": "vriend_relatie.mp4"
+    },
+    {
+        "title": "Vriend (platonisch)",
+        "lesson_id": 5,
+        "category_id": 19,
+        "description": "Een mannelijke vriend met wie je geen romantische relatie hebt.",
+        "video": "vriend_platonisch.mp4"
+    },
+    {
+        "title": "Ademen",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "De handeling van lucht in- en uit de longen brengen.",
+        "video": "ademen.mp4"
+    },
+    {
+        "title": "Braken / Overgeven",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Het spontaan uitwerpen van voedsel of vloeistof uit de maag.",
+        "video": "braken_overgeven.mp4"
+    },
+    {
+        "title": "Mammografie",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Een röntgenonderzoek van de borsten.",
+        "video": "mammografie.mp4"
+    },
+    {
+        "title": "Behandeling / Behandelen",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Het verzorgen of genezen van een ziekte of aandoening.",
+        "video": "behandeling_behandelen.mp4"
+    },
+    {
+        "title": "Breuk / Gebroken",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Een breuk in een bot, meestal door een ongeluk.",
+        "video": "breuk_gebroken.mp4"
+    },
+    {
+        "title": "Misselijk (zijn)",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Het gevoel van willen overgeven.",
+        "video": "misselijk_zijn.mp4"
+    },
+    {
+        "title": "Bewegen / Beweging",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Het verplaatsen van het lichaam of delen ervan.",
+        "video": "bewegen_beweging.mp4"
+    },
+    {
+        "title": "Kneuzen / Gekneusd",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Een blessure door druk of een klap, zonder dat het bot gebroken is.",
+        "video": "kneuzen_gekneusd.mp4"
+    },
+    {
+        "title": "Onderzoek",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Een procedure om iets te ontdekken, zoals medische tests.",
+        "video": "onderzoek.mp4"
+    },
+    {
+        "title": "Biopsie",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Het nemen van een klein stukje weefsel voor verder onderzoek.",
+        "video": "biopsie.mp4"
+    },
+    {
+        "title": "Controle",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Het nakijken van iets om de status te beoordelen.",
+        "video": "controle.mp4"
+    },
+    {
+        "title": "Ontspannen (zijn)",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Minder gespannen of gestrest zijn.",
+        "video": "ontspannen_zijn.mp4"
+    },
+    {
+        "title": "Bloed",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Het vloeistof dat door het lichaam stroomt, inclusief zuurstof en voedingsstoffen.",
+        "video": "bloed.mp4"
+    },
+    {
+        "title": "Dizelig (zijn)",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Het gevoel van duizeligheid of onvastheid.",
+        "video": "dizelig_zijn.mp4"
+    },
+    {
+        "title": "Pijn",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Een onaangenaam gevoel dat door schade aan het lichaam wordt veroorzaakt.",
+        "video": "pijn.mp4"
+    },
+    {
+        "title": "Bloeddruk",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "De druk die het bloed uitoefent op de wanden van de bloedvaten.",
+        "video": "bloeddruk.mp4"
+    },
+    {
+        "title": "Echo",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Een medisch onderzoek waarbij geluidsgolven worden gebruikt om beelden van organen te maken.",
+        "video": "echo.mp4"
+    },
+    {
+        "title": "Pijn...",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Een andere vorm van pijn die specifiek wordt genoemd.",
+        "video": "pijn_specifiek.mp4"
+    },
+    {
+        "title": "Bloeddruk: Hoog",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Wanneer de bloeddruk te hoog is.",
+        "video": "bloeddruk_hoog.mp4"
+    },
+    {
+        "title": "Flauwvallen",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Het tijdelijk verliezen van bewustzijn.",
+        "video": "flauwvallen.mp4"
+    },
+    {
+        "title": "Röntgenfoto",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Een foto van het lichaam die door middel van röntgenstralen wordt genomen.",
+        "video": "rontgenfoto.mp4"
+    },
+    {
+        "title": "Bloeddruk: Laag",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Wanneer de bloeddruk te laag is.",
+        "video": "bloeddruk_laag.mp4"
+    },
+    {
+        "title": "Hoofdpijn",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Pijn die wordt gevoeld in het hoofd of de nek.",
+        "video": "hoofdpijn.mp4"
+    },
+    {
+        "title": "Therapie",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Behandeling van een ziekte of aandoening met medicatie of andere technieken.",
+        "video": "therapie.mp4"
+    },
+    {
+        "title": "Jeuk (hebben) / Jeuken",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "Het gevoel dat je huid prikt en je wilt krabben.",
+        "video": "jeuk_hebben.mp4"
+    },
+    {
+        "title": "Uitslag (onderzoek)",
+        "lesson_id": 6,
+        "category_id": 20,
+        "description": "De resultaten van een medisch onderzoek.",
+        "video": "uitslag_onderzoek.mp4"
+    },
+    {
+        "title": "Gips",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Een hard materiaal dat gebruikt wordt om een gebroken bot te stabiliseren.",
+        "video": "gips.mp4"
+    },
+    {
+        "title": "Ontlasting / Poep",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "De afvalstoffen die het lichaam verlaat na spijsvertering.",
+        "video": "ontlasting_poep.mp4"
+    },
+    {
+        "title": "Verband",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Materiaal dat wordt gebruikt om een wond te bedekken en te beschermen.",
+        "video": "verband.mp4"
+    },
+    {
+        "title": "Hechten / Hechting",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Het dichten van een wond met behulp van naald en draad.",
+        "video": "hechten_hechting.mp4"
+    },
+    {
+        "title": "Operatie / Opereren",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Een medische ingreep om iets te behandelen of te verhelpen.",
+        "video": "operatie_opereren.mp4"
+    },
+    {
+        "title": "Verpleegkundige",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Een zorgverlener die medische en verplegende zorg biedt.",
+        "video": "verpleegkundige.mp4"
+    },
+    {
+        "title": "Infuus",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Een apparaat dat vloeistoffen in het lichaam brengt via een ader.",
+        "video": "infuus.mp4"
+    },
+    {
+        "title": "Plassen / Plas",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Het lozen van urine uit het lichaam.",
+        "video": "plassen_plas.mp4"
+    },
+    {
+        "title": "Warm (zijn)",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Een verhoogde lichaamstemperatuur hebben.",
+        "video": "warm_zijn.mp4"
+    },
+    {
+        "title": "Koorts",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Een verhoogde lichaamstemperatuur, vaak door ziekte.",
+        "video": "koorts.mp4"
+    },
+    {
+        "title": "Poepen",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Het proces van het uitscheiden van ontlasting.",
+        "video": "poepen.mp4"
+    },
+    {
+        "title": "WC",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Een toilet, vaak in ziekenhuizen.",
+        "video": "wc.mp4"
+    },
+    {
+        "title": "Koud (hebben) / Kou",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Een lage lichaamstemperatuur hebben of koud aanvoelen.",
+        "video": "koud_hebben_kou.mp4"
+    },
+    {
+        "title": "Slapen",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "In rust verkeren, een periode van slaap.",
+        "video": "slapen.mp4"
+    },
+    {
+        "title": "Ziekenhuis",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Een instelling waar medische zorg wordt verleend.",
+        "video": "ziekenhuis.mp4"
+    },
+    {
+        "title": "Lopen",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Het verplaatsen van het lichaam door middel van lopen.",
+        "video": "lopen.mp4"
+    },
+    {
+        "title": "Slecht",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "In een slechte toestand verkeren, fysiek of mentaal.",
+        "video": "slecht.mp4"
+    },
+    {
+        "title": "Chirurg",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Een arts die gespecialiseerd is in operaties.",
+        "video": "chirurg.mp4"
+    },
+    {
+        "title": "Narcosis",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Een vorm van anesthesie waarbij het bewustzijn wordt verlaagd.",
+        "video": "narcosis.mp4"
+    },
+    {
+        "title": "Staan",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Rechtop staan, het tegenovergestelde van zitten of liggen.",
+        "video": "staan.mp4"
+    },
+    {
+        "title": "Eerste Hulp",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "De eerste zorg die wordt geboden bij een ongeval of plotselinge ziekte.",
+        "video": "eerste_hulp.mp4"
+    },
+    {
+        "title": "Nuchtere maag",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Een maag die leeg is van voedsel of drinken.",
+        "video": "nuchtere_maag.mp4"
+    },
+    {
+        "title": "Temperatuur",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "De lichaamstemperatuur van iemand.",
+        "video": "temperatuur.mp4"
+    },
+    {
+        "title": "Specialist",
+        "lesson_id": 6,
+        "category_id": 21,
+        "description": "Een arts die gespecialiseerd is in een bepaald medisch gebied.",
+        "video": "specialist.mp4"
+    },
+    {
+        "title": "Al",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "De situatie is al gebeurd of klaar.",
+        "video": "al.mp4"
+    },
+    {
+        "title": "Mogen: Mag-wel",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Iets is toegestaan of geoorloofd.",
+        "video": "mogen_mag_wel.mp4"
+    },
+    {
+        "title": "Water",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Vloeistof, essentieel voor het leven.",
+        "video": "water.mp4"
+    },
+    {
+        "title": "Ambulance",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Een voertuig voor medische noodsituaties.",
+        "video": "ambulance.mp4"
+    },
+    {
+        "title": "Mogen: Mag-niet",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Iets is niet toegestaan of geoorloofd.",
+        "video": "mogen_mag_niet.mp4"
+    },
+    {
+        "title": "Weinig / Beetje",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Een kleine hoeveelheid van iets.",
+        "video": "weinig_beetje.mp4"
+    },
+    {
+        "title": "Bezorgd / Zorgen-maken",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Zich zorgen maken om iets of iemand.",
+        "video": "bezorgd_zorgen_maken.mp4"
+    },
+    {
+        "title": "Over (gaan) x",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Een situatie of probleem dat voorbij is.",
+        "video": "over_gaan_x.mp4"
+    },
+    {
+        "title": "Drinken",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Het in je mond nemen van vloeistof.",
+        "video": "drinken.mp4"
+    },
+    {
+        "title": "Overleden (zijn)",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Iemand die gestorven is.",
+        "video": "overleden_zijn.mp4"
+    },
+    {
+        "title": "Eten",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Het consumeren van voedsel.",
+        "video": "eten.mp4"
+    },
+    {
+        "title": "Rustig (zijn) x",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "In een kalme toestand verkeren.",
+        "video": "rustig_zijn_x.mp4"
+    },
+    {
+        "title": "Gaan (naar)",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Verplaatsen naar een andere plaats.",
+        "video": "gaan_naar.mp4"
+    },
+    {
+        "title": "Suikerziekte",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Een aandoening waarbij het lichaam problemen heeft met het reguleren van bloedsuiker.",
+        "video": "suikerziekte.mp4"
+    },
+    {
+        "title": "Hongeren-hebben",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Het gevoel van honger hebben.",
+        "video": "hongeren_hebben.mp4"
+    },
+    {
+        "title": "Veel",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Een grote hoeveelheid van iets.",
+        "video": "veel.mp4"
+    },
+    {
+        "title": "Huis",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "De plek waar iemand woont.",
+        "video": "huis.mp4"
+    },
+    {
+        "title": "Vervelend (zijn)",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Iets wat onaangenaam is.",
+        "video": "vervelend_zijn.mp4"
+    },
+    {
+        "title": "Komen: Komt goed",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Een geruststelling dat alles in orde zal komen.",
+        "video": "komen_komt_goed.mp4"
+    },
+    {
+        "title": "Wachten",
+        "lesson_id": 7,
+        "category_id": 22,
+        "description": "Tijd doorbrengen in afwachting van iets.",
+        "video": "wachten.mp4"
+    },
+    {
+        "title": "Arm",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het bovenste ledemaat, van schouder tot hand.",
+        "video": "arm.mp4"
+    },
+    {
+        "title": "Hoofd",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het bovenste deel van het lichaam, waarin de hersenen zich bevinden.",
+        "video": "hoofd.mp4"
+    },
+    {
+        "title": "Ribben",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "De botten die de borstkas omgeven en de vitale organen beschermen.",
+        "video": "ribben.mp4"
+    },
+    {
+        "title": "Anus",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "De opening van het lichaam waar ontlasting het lichaam verlaat.",
+        "video": "anus.mp4"
+    },
+    {
+        "title": "Keel",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het gedeelte van het lichaam tussen de mond en de slokdarm.",
+        "video": "keel.mp4"
+    },
+    {
+        "title": "Rug",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het achterste deel van het bovenlichaam.",
+        "video": "rug.mp4"
+    },
+    {
+        "title": "Been",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het onderste ledemaat dat het lichaam ondersteunt.",
+        "video": "been.mp4"
+    },
+    {
+        "title": "Knie",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het gewricht tussen het bovenbeen en het onderbeen.",
+        "video": "knie.mp4"
+    },
+    {
+        "title": "Schouder",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het gewricht dat de arm aan het lichaam verbindt.",
+        "video": "schouder.mp4"
+    },
+    {
+        "title": "Billen",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "De achterste delen van het lichaam.",
+        "video": "billen.mp4"
+    },
+    {
+        "title": "Mond",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het lichaamsdeel waarmee we eten en spreken.",
+        "video": "mond.mp4"
+    },
+    {
+        "title": "Tand",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Een harde structuur in de mond die wordt gebruikt voor het malen van voedsel.",
+        "video": "tand.mp4"
+    },
+    {
+        "title": "Borst",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het gebied van het lichaam dat het hart en de longen beschermt.",
+        "video": "borst.mp4"
+    },
+    {
+        "title": "Nagel",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het harde materiaal aan de uiteinden van de vingers en tenen.",
+        "video": "nagel.mp4"
+    },
+    {
+        "title": "Teen",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "De uiteinden van de voeten.",
+        "video": "teen.mp4"
+    },
+    {
+        "title": "Borst vrouw",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het vrouwelijk deel van het bovenlichaam, bevat de borsten.",
+        "video": "borst_vrouw.mp4"
+    },
+    {
+        "title": "Nek",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het gedeelte van het lichaam dat het hoofd met de rest van het lichaam verbindt.",
+        "video": "nek.mp4"
+    },
+    {
+        "title": "Vagina",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het vrouwelijke voortplantingsorgaan.",
+        "video": "vagina.mp4"
+    },
+    {
+        "title": "Enkel",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het gewricht tussen de voet en het been.",
+        "video": "enkel.mp4"
+    },
+    {
+        "title": "Neus",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het orgaan voor ademhaling en geur.",
+        "video": "neus.mp4"
+    },
+    {
+        "title": "Vinger",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "De ledematen aan de handen, gebruikt voor grip en aanraking.",
+        "video": "vinger.mp4"
+    },
+    {
+        "title": "Buik",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het gedeelte van het lichaam waarin de organen van de spijsvertering zich bevinden.",
+        "video": "buik.mp4"
+    },
+    {
+        "title": "Oog",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het orgaan voor het waarnemen van visuele prikkels.",
+        "video": "oog.mp4"
+    },
+    {
+        "title": "Voet",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het onderste deel van het been dat het lichaam ondersteunt.",
+        "video": "voet.mp4"
+    },
+    {
+        "title": "Elleboog",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het gewricht tussen de bovenarm en de onderarm.",
+        "video": "elleboog.mp4"
+    },
+    {
+        "title": "Oor",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het orgaan voor gehoor en evenwicht.",
+        "video": "oor.mp4"
+    },
+    {
+        "title": "Wang",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "De zijkanten van het gezicht, naast de neus.",
+        "video": "wang.mp4"
+    },
+    {
+        "title": "Gezicht",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het voorste gedeelte van het hoofd, met de ogen, neus, mond, enz.",
+        "video": "gezicht.mp4"
+    },
+    {
+        "title": "Penis",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het mannelijke voortplantingsorgaan.",
+        "video": "penis.mp4"
+    },
+    {
+        "title": "Haar",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "De haartjes op het hoofd of lichaam.",
+        "video": "haar.mp4"
+    },
+    {
+        "title": "Pols",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het gewricht tussen de hand en de arm.",
+        "video": "pols.mp4"
+    },
+    {
+        "title": "Hand",
+        "lesson_id": 7,
+        "category_id": 23,
+        "description": "Het orgaan voor grijpen en manipuleren van objecten.",
+        "video": "hand.mp4"
+    },
+    {
+        "title": "Alvleesklier",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "Een orgaan dat helpt bij de spijsvertering en bloedsuikerregulatie.",
+        "video": "alvleesklier.mp4"
+    },
+    {
+        "title": "Eierstokken",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "De vrouwelijke voortplantingsorganen die eieren produceren.",
+        "video": "eierstokken.mp4"
+    },
+    {
+        "title": "Longen",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "De organen die verantwoordelijk zijn voor ademhaling.",
+        "video": "longen.mp4"
+    },
+    {
+        "title": "Baarmoeder",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "Het vrouwelijke voortplantingsorgaan waar de baby zich ontwikkelt.",
+        "video": "baarmoeder.mp4"
+    },
+    {
+        "title": "Endeldarm",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "Het laatste gedeelte van de dikke darm.",
+        "video": "endeldarm.mp4"
+    },
+    {
+        "title": "Maag",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "Het orgaan waar voedsel wordt afgebroken door zuren en enzymen.",
+        "video": "maag.mp4"
+    },
+    {
+        "title": "Blas",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "Het orgaan dat urine opslaat.",
+        "video": "blas.mp4"
+    },
+    {
+        "title": "Hart",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "Het orgaan dat bloed door het lichaam pompt.",
+        "video": "hart.mp4"
+    },
+    {
+        "title": "Organe",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "Algemene term voor elk functioneel deel van het lichaam.",
+        "video": "organe.mp4"
+    },
+    {
+        "title": "Darmen",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "De organen die het voedsel verteren en absorbereren van voedingsstoffen.",
+        "video": "darmen.mp4"
+    },
+    {
+        "title": "Hersenen",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "Het orgaan dat verantwoordelijk is voor het denken en het coördineren van het lichaam.",
+        "video": "hersenen.mp4"
+    },
+    {
+        "title": "Slokdarm",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "Het orgaan dat voedsel naar de maag brengt.",
+        "video": "slokdarm.mp4"
+    },
+    {
+        "title": "Dikke-darm",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "Het gedeelte van de darm dat verantwoordelijk is voor waterabsorptie.",
+        "video": "dikke-darm.mp4"
+    },
+    {
+        "title": "Huid",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "Het orgaan dat het lichaam beschermt en bedekt.",
+        "video": "huid.mp4"
+    },
+    {
+        "title": "Spier",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "Weefsel dat het lichaam in staat stelt te bewegen.",
+        "video": "spier.mp4"
+    },
+    {
+        "title": "Dunne-darm",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "Het orgaan waar de meeste spijsvertering en absorptie van voedingsstoffen plaatsvinden.",
+        "video": "dunne-darm.mp4"
+    },
+    {
+        "title": "Lever",
+        "lesson_id": 7,
+        "category_id": 24,
+        "description": "Het orgaan dat betrokken is bij de stofwisseling en ontgifting.",
+        "video": "lever.mp4"
+    }
+]
