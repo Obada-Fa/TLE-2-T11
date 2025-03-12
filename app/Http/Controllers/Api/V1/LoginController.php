@@ -8,58 +8,50 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Redirect;
+use Carbon\Carbon;
 
 class LoginController extends Controller
 {
     public function Login(Request $request)
     {
-//            $all = $request->all();
-//            $redi = $redirect;
-//
-//            $formattedUrl = "http://" . $redirect;
-//
-////        return response()->json([
-////            'all' => $all,
-////            'redi' => $redi
-////        ]);
-//            return redirect()->to($formattedUrl);
-
-
         $request->validate([
-            'token' => 'required',
+            'token' => 'required|string',
             'name' => 'required|string',
-            'email' => 'required|email'
+            'email' => 'required|email',
         ]);
 
         $validateUrl = 'https://cmgt.hr.nl/api/validate-sso-token';
         $response = Http::withHeaders([
-//            'token' => $request->token,
-            'Authorization' => 'Bearer ' . $request->token,
+            'token' => $request->token,
         ])->get($validateUrl);
-
-//        $user = Auth::user();
-//        dd($user);
 
         if ($response->status() === 401) {
             return response()->json(['error' => 'Token expired or invalid'], 401);
-        } else {
-
-//            $user = User::Create(
-//                ['email' => $request->email],
-//                ['name' => $request->name]
-//            );
-            return Redirect::to('https://youtube.com');
         }
 
 
+        $user = User::firstOrCreate(
+            ['email' => $request->email],
+            [
+                'name'  => $request->name,
+                'token' => $request->token,
+                'last_login_at' => Carbon::now()->toDateString(),
+            ]
+        );
+
+            $user->update([
+                'last_login_at' => Carbon::now()->toDateString(),
+            ]);
+
+        $lastLoginDate = Carbon::now()->toDateString();
 
 
+        $redirectUrl = "http://145.24.222.40/login/?token=" . urlencode($request->token) .
+            "&email=" . urlencode($request->email) .
+            "&date=" . urlencode($lastLoginDate);
 
-        return response()->json([
-            'token' => $token,
-            'name' => $name,
-            'email' => $email
-        ]);
+        return redirect()->to($redirectUrl);
     }
+
 
 }
