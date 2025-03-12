@@ -19,6 +19,7 @@ class SignCollection extends ResourceCollection
                 return [
                     'id' => $sign->id,
                     'title' => $sign->title, // Of andere velden die relevant zijn
+                    'video' => $sign->video,
                     '_links' => [ 'self' => url("/api/v1/signs/{$sign->id}") ],
                 ];
             }),

@@ -13,6 +13,10 @@ class Assignment extends Model
     /** @use HasFactory<\Database\Factories\AssignmentFactory> */
     use HasFactory;
 
+    protected $fillable = [
+        'name'
+    ];
+
     public function lesson(): BelongsTo
     {
         return $this->belongsTo(Lesson::class);

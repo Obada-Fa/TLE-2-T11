@@ -31,7 +31,17 @@ class CategoriesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'name' => 'required|string|max:255'
+        ]);
+        $category = new Category();
+        $category ->name = $request ->name;
+        $category ->save();
+
+        return response()->json([
+            'message'=> 'Category succesfully created',
+            'data' => $category
+        ],201);
     }
 
     /**
@@ -47,16 +57,29 @@ class CategoriesController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Category $categories)
+    public function update(Request $request, Category $category)
     {
-        //
+        $validated = $request->validate([
+            'name' => 'required|string|max:255'
+        ]);
+        $category->update($validated);
+
+        return response()->json([
+            'message'=> 'Category succesfully edited',
+            'data' => $category
+        ],200);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Category $categories)
+    public function destroy(Category $category)
     {
-        //
+        $category->delete();
+
+        return response()->json([
+            'message' => 'Category successfully deleted'
+        ]);
     }
+
 }
