@@ -38,17 +38,21 @@ class CategoriesController extends Controller
     public function store(Request $request)
     {
 
-        $validated = $request->validate([
-            'name' => 'required|string|max:255'
-        ]);
-        $category = new Category();
-        $category ->name = $request ->name;
-        $category ->save();
+        if ($request->is('POST')) {
+            $validated = $request->validate([
+                'name' => 'required|string|max:255'
+            ]);
+            $category = new Category();
+            $category->name = $request->name;
+            $category->save();
 
-        return response()->json([
-            'message'=> 'Category succesfully created',
-            'data' => $category
-        ],201);
+            $response = response()->json([
+                'message' => 'Category succesfully created',
+                'data' => $category
+            ], 201);
+            $response->headers->set('Access-Control-Allow-Methods', ['POST', 'OPTIONS']);
+            return $response;
+        }
     }
 
     /**
@@ -63,6 +67,7 @@ class CategoriesController extends Controller
                     'message' => 'Successfully retrieved the ID',
                     'data' => new CategorySignResource($category->load('signs'))
                 ], 200);
+            $response->headers->set('Access-Control-Allow-Methods', ['GET', 'OPTIONS']);
             return $response;
 
         }
@@ -73,27 +78,36 @@ class CategoriesController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        $validated = $request->validate([
-            'name' => 'required|string|max:255'
-        ]);
-        $category->update($validated);
+        if ($request->is('PUT')) {
+            $validated = $request->validate([
+                'name' => 'required|string|max:255'
+            ]);
+            $category->update($validated);
 
-        return response()->json([
-            'message'=> 'Category succesfully edited',
-            'data' => $category
-        ],200);
+            $response = response()->json([
+                'message' => 'Category succesfully edited',
+                'data' => $category
+            ], 200);
+            $response->headers->set('Access-Control-Allow-Methods', ['PUT', 'OPTIONS']);
+            return $response;
+        }
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Category $category)
+    public function destroy(Request $request, Category $category)
     {
-        $category->delete();
 
-        return response()->json([
-            'message' => 'Category successfully deleted'
-        ]);
+        if ($request->isMethod('DELETE')) {
+            $response = response()->json([
+                'message' => 'Category successfully deleted',
+                $category->delete()
+            ], 204);
+            $response->headers->set('Access-Control-Allow-Methods', ['DELETE', 'OPTIONS']);
+            return $response;
+        }
+
     }
 
 }
