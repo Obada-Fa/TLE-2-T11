@@ -256,7 +256,7 @@
         "lesson_id": 1,
         "category_id": 4,
         "description": "Een vraag om te vragen hoe het gaat.",
-        "video": "gaat het goed.mp4"
+        "video": "gaat_het_goed.mp4"
     },
     {
         "title": "Goed",
@@ -291,21 +291,21 @@
         "lesson_id": 1,
         "category_id": 4,
         "description": "Een afscheidsgroet.",
-        "video": "tot ziens.mp4"
+        "video": "tot_ziens.mp4"
     },
     {
         "title": "Tot ziens groep",
         "lesson_id": 1,
         "category_id": 4,
         "description": "Een afscheidsgroet voor een groep.",
-        "video": "tot ziens groep.mp4"
+        "video": "tot_ziens.mp4"
     },
     {
         "title": "Goedemorgen",
         "lesson_id": 1,
         "category_id": 4,
         "description": "Een begroeting die in de ochtend gebruikt wordt.",
-        "video": "goedemorgen.mp4"
+        "video": "goede_morgen.mp4"
     },
     {
         "title": "Goedemiddag",
@@ -466,7 +466,7 @@
             "lesson_id": 2,
             "category_id": 6,
             "description": "Gebruikt bij het geven van iets aan iemand.",
-            "video": "alsjeblieft_(iets_gevan).mp4"
+            "video": "alsjeblieft_(iets_geven).mp4"
         },
         {
             "title": "Klopt",
@@ -725,7 +725,7 @@
         "lesson_id": 3,
         "category_id": 9,
         "description": "De ochtend van vandaag.",
-        "video": "vanmorgen.mp4"
+        "video": "vanochtend.mp4"
     },
     {
         "title": "Vanmiddag",
@@ -963,7 +963,7 @@
         "lesson_id": 3,
         "category_id": 12,
         "description": "Iets is niet belangrijk of van invloed op de beslissing.",
-        "video": "het_maakt_niet_uit.mp4"
+        "video": "maakt_niet_uit.mp4"
     },
     {
         "title": "Vandaag",
@@ -1099,11 +1099,60 @@
         "video": "welke.mp4"
     },
     {
-        "title": "14 t/m 21",
+        "title": "14",
         "lesson_id": 4,
         "category_id": 14,
-        "description": "14 van 14 tot 21.",
-        "video": "14_tm_21.mp4"
+        "description": "14",
+        "video": "14.mp4"
+    },
+    {
+        "title": "15",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "15",
+        "video": "15.mp4"
+    },
+    {
+        "title": "16",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "16",
+        "video": "16.mp4"
+    },
+    {
+        "title": "17",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "17",
+        "video": "17.mp4"
+    },
+    {
+        "title": "18",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "18",
+        "video": "18.mp4"
+    },
+    {
+        "title": "19",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "19",
+        "video": "19.mp4"
+    },
+    {
+        "title": "20",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "20",
+        "video": "20.mp4"
+    },
+    {
+        "title": "21",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "21",
+        "video": "21.mp4"
     },
     {
         "title": "Cijfer",
@@ -1113,11 +1162,67 @@
         "video": "cijfer.mp4"
     },
     {
-        "title": "22 t/m 30",
+        "title": "22",
         "lesson_id": 4,
         "category_id": 14,
-        "description": "14 van 22 tot 30.",
-        "video": "22_tm_30.mp4"
+        "description": "22",
+        "video": "22.mp4"
+    },
+    {
+        "title": "23",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "23",
+        "video": "23.mp4"
+    },
+    {
+        "title": "24",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "24",
+        "video": "24.mp4"
+    },
+    {
+        "title": "25",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "25",
+        "video": "25.mp4"
+    },
+    {
+        "title": "26",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "26",
+        "video": "26.mp4"
+    },
+    {
+        "title": "27",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "27",
+        "video": "27.mp4"
+    },
+    {
+        "title": "28",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "28",
+        "video": "28.mp4"
+    },
+    {
+        "title": "29",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "29",
+        "video": "29.mp4"
+    },
+    {
+        "title": "30",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "30",
+        "video": "30.mp4"
     },
     {
         "title": "Datum",
@@ -1127,11 +1232,53 @@
         "video": "datum.mp4"
     },
     {
-        "title": "21, 30, 40, .. 100",
+        "title": "40",
         "lesson_id": 4,
         "category_id": 14,
-        "description": "14 van 21, 30, 40 tot 100.",
-        "video": "21_30_40_100.mp4"
+        "description": "40",
+        "video": "40.mp4"
+    },
+    {
+        "title": "50",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "50",
+        "video": "50.mp4"
+    },
+    {
+        "title": "60",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "60",
+        "video": "60.mp4"
+    },
+    {
+        "title": "70",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "70",
+        "video": "70.mp4"
+    },
+    {
+        "title": "80",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "80",
+        "video": "80.mp4"
+    },
+    {
+        "title": "90",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "90",
+        "video": "90.mp4"
+    },
+    {
+        "title": "100",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "40",
+        "video": "100.mp4"
     },
     {
         "title": "Geboren",
@@ -1141,11 +1288,53 @@
         "video": "geboren.mp4"
     },
     {
-        "title": "23, 33, 44, .. 99",
+        "title": "33",
         "lesson_id": 4,
         "category_id": 14,
-        "description": "14 van 23, 33, 44 tot 99.",
-        "video": "23_33_44_99.mp4"
+        "description": "33",
+        "video": "33.mp4"
+    },
+    {
+        "title": "44",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "44",
+        "video": "44.mp4"
+    },
+    {
+        "title": "55",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "55",
+        "video": "55.mp4"
+    },
+    {
+        "title": "66",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "66",
+        "video": "66.mp4"
+    },
+    {
+        "title": "77",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "77",
+        "video": "77.mp4"
+    },
+    {
+        "title": "88",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "88",
+        "video": "88.mp4"
+    },
+    {
+        "title": "99",
+        "lesson_id": 4,
+        "category_id": 14,
+        "description": "99",
+        "video": "99.mp4"
     },
     {
         "title": "Jarig",
@@ -1169,11 +1358,18 @@
         "video": "hoe_oud.mp4"
     },
     {
-        "title": "1 uur lang, 2 uur lang",
+        "title": "1 uur lang",
         "lesson_id": 4,
         "category_id": 15,
-        "description": "De tijdsduur van 1 of 2 uur.",
-        "video": "1_uur_lang_2_uur_lang.mp4"
+        "description": "De tijdsduur van 1 uur.",
+        "video": "1_uur_lang.mp4"
+    },
+    {
+        "title": "2 uur lang",
+        "lesson_id": 4,
+        "category_id": 15,
+        "description": "De tijdsduur van 2 uur.",
+        "video": "2_uur_lang.mp4"
     },
     {
         "title": "Half uur lang",
@@ -1190,11 +1386,18 @@
         "video": "kwartier.mp4"
     },
     {
-        "title": "1 uur, 2 uur",
+        "title": "1 uur",
         "lesson_id": 4,
         "category_id": 15,
-        "description": "De tijdsaanduiding van 1 of 2 uur.",
-        "video": "1_uur_2_uur.mp4"
+        "description": "De tijdsaanduiding van 1 uur.",
+        "video": "1_uur.mp4"
+    },
+    {
+        "title": "2 uur",
+        "lesson_id": 4,
+        "category_id": 15,
+        "description": "De tijdsaanduiding van 2 uur.",
+        "video": "2_uur.mp4"
     },
     {
         "title": "Horloge",
@@ -1211,11 +1414,25 @@
         "video": "later.mp4"
     },
     {
-        "title": "10 minuten over 1/2/3",
+        "title": "10 minuten over 1",
         "lesson_id": 4,
         "category_id": 15,
-        "description": "10 minuten voorbij het uur van 1, 2, of 3.",
-        "video": "10_minuten_over_1_2_3.mp4"
+        "description": "10 minuten voorbij het uur 1.",
+        "video": "10_over_1.mp4"
+    },
+    {
+        "title": "10 minuten over 2",
+        "lesson_id": 4,
+        "category_id": 15,
+        "description": "10 minuten voorbij het uur 2.",
+        "video": "10_over_2.mp4"
+    },
+    {
+        "title": "10 minuten over 3",
+        "lesson_id": 4,
+        "category_id": 15,
+        "description": "10 minuten voorbij het uur 3.",
+        "video": "10_over_3.mp4"
     },
     {
         "title": "Klok",
@@ -1232,18 +1449,32 @@
         "video": "minuut.mp4"
     },
     {
-        "title": "10 minuten voor 1/2/3",
+        "title": "10 minuten voor 1",
         "lesson_id": 4,
         "category_id": 15,
-        "description": "10 minuten voor het uur van 1, 2, of 3.",
-        "video": "10_minuten_voor_1_2_3.mp4"
+        "description": "10 minuten voorbij het uur 1.",
+        "video": "10_voor_1.mp4"
     },
     {
-        "title": "Kwart over (rechtshandig)",
+        "title": "10 minuten voor 2",
+        "lesson_id": 4,
+        "category_id": 15,
+        "description": "10 minuten voorbij het uur 2.",
+        "video": "10_voor_2.mp4"
+    },
+    {
+        "title": "10 minuten voor 3",
+        "lesson_id": 4,
+        "category_id": 15,
+        "description": "10 minuten voorbij het uur 3.",
+        "video": "10_voor_3.mp4"
+    },
+    {
+        "title": "Kwart over",
         "lesson_id": 4,
         "category_id": 15,
         "description": "16 minuten over een uur, met de klok mee.",
-        "video": "kwart_over_rechtshandig.mp4"
+        "video": "kwart_over.mp4"
     },
     {
         "title": "Nooit",
@@ -1260,13 +1491,6 @@
         "video": "altijd.mp4"
     },
     {
-        "title": "Kwarter over (linkshandig)",
-        "lesson_id": 4,
-        "category_id": 15,
-        "description": "16 minuten over een uur, tegen de klok in.",
-        "video": "kwarter_over_linkshandig.mp4"
-    },
-    {
         "title": "Tijd",
         "lesson_id": 4,
         "category_id": 15,
@@ -1281,11 +1505,11 @@
         "video": "eerder.mp4"
     },
     {
-        "title": "Kwarter voor (rechtshandig)",
+        "title": "Kwart voor",
         "lesson_id": 4,
         "category_id": 15,
         "description": "16 minuten voor een uur, met de klok mee.",
-        "video": "kwarter_voor_rechtshandig.mp4"
+        "video": "kwart_voor.mp4"
     },
     {
         "title": "Uur",
@@ -1295,18 +1519,18 @@
         "video": "uur.mp4"
     },
     {
-        "title": "Half 1, Half 2",
+        "title": "Half 1",
         "lesson_id": 4,
         "category_id": 15,
-        "description": "De tijden van half één en half twee.",
-        "video": "half_1_half_2.mp4"
+        "description": "De tijd van half één",
+        "video": "half_1.mp4"
     },
     {
-        "title": "Kwarter voor (linkshandig)",
+        "title": "Half 2",
         "lesson_id": 4,
         "category_id": 15,
-        "description": "16 minuten voor een uur, tegen de klok in.",
-        "video": "kwarter_voor_linkshandig.mp4"
+        "description": "De tijd van half twee",
+        "video": "half_2.mp4"
     },
     {
         "title": "Apotheek",
@@ -1320,7 +1544,7 @@
         "lesson_id": 5,
         "category_id": 16,
         "description": "In goede gezondheid verkeren.",
-        "video": "gezond_zijn.mp4"
+        "video": "gezond_(zijn).mp4"
     },
     {
         "title": "Tandarts",
@@ -1355,7 +1579,7 @@
         "lesson_id": 5,
         "category_id": 16,
         "description": "Gezond zijn na ziekte.",
-        "video": "beter_zijn.mp4"
+        "video": "beter_(zijn).mp4"
     },
     {
         "title": "Medicijnen",
