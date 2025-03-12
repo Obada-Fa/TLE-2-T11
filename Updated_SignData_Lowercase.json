@@ -1635,7 +1635,7 @@
         "lesson_id": 5,
         "category_id": 17,
         "description": "De plaats waar iemand is geboren.",
-        "video": "geborenplaats.mp4"
+        "video": "geboorteplaats.mp4"
     },
     {
         "title": "Telefoonnummer",
@@ -1845,42 +1845,42 @@
         "lesson_id": 5,
         "category_id": 20,
         "description": "De vrouwelijke partner in een relatie.",
-        "video": "vrouw_relatie.mp4"
+        "video": "vrouw (relatie).mp4"
     },
     {
         "title": "Vrouw (platonisch)",
         "lesson_id": 5,
         "category_id": 20,
         "description": "Een vrouw met wie je geen romantische relatie hebt.",
-        "video": "vrouw_platonisch.mp4"
+        "video": "vrouw (platonisch).mp4"
     },
     {
         "title": "Man (relatie)",
         "lesson_id": 5,
         "category_id": 20,
         "description": "De mannelijke partner in een relatie.",
-        "video": "man_relatie.mp4"
+        "video": "man (relatie).mp4"
     },
     {
         "title": "Man (platonisch)",
         "lesson_id": 5,
         "category_id": 20,
         "description": "Een man met wie je geen romantische relatie hebt.",
-        "video": "man_platonisch.mp4"
+        "video": "man (platonisch).mp4"
     },
     {
         "title": "Vriend (relatie)",
         "lesson_id": 5,
         "category_id": 20,
         "description": "Een mannelijke vriend met wie je een romantische relatie hebt.",
-        "video": "vriend_relatie.mp4"
+        "video": "vriend (relatie).mp4"
     },
     {
         "title": "Vriend (platonisch)",
         "lesson_id": 5,
         "category_id": 20,
         "description": "Een mannelijke vriend met wie je geen romantische relatie hebt.",
-        "video": "vriend_platonisch.mp4"
+        "video": "vriend (platonisch).mp4"
     },
     {
         "title": "Ademen",
@@ -1894,7 +1894,7 @@
         "lesson_id": 6,
         "category_id": 21,
         "description": "Het spontaan uitwerpen van voedsel of vloeistof uit de maag.",
-        "video": "braken_overgeven.mp4"
+        "video": "braken.mp4"
     },
     {
         "title": "Mammografie",
@@ -1908,35 +1908,35 @@
         "lesson_id": 6,
         "category_id": 21,
         "description": "Het verzorgen of genezen van een ziekte of aandoening.",
-        "video": "behandeling_behandelen.mp4"
+        "video": "Behandelen.mp4"
     },
     {
         "title": "Breuk / Gebroken",
         "lesson_id": 6,
         "category_id": 21,
         "description": "Een breuk in een bot, meestal door een ongeluk.",
-        "video": "breuk_gebroken.mp4"
+        "video": "gebroken.mp4"
     },
     {
         "title": "Misselijk (zijn)",
         "lesson_id": 6,
         "category_id": 21,
         "description": "Het gevoel van willen overgeven.",
-        "video": "misselijk_zijn.mp4"
+        "video": "misselijk.mp4"
     },
     {
         "title": "Bewegen / Beweging",
         "lesson_id": 6,
         "category_id": 21,
         "description": "Het verplaatsen van het lichaam of delen ervan.",
-        "video": "bewegen_beweging.mp4"
+        "video": "bewegen.mp4"
     },
     {
         "title": "Kneuzen / Gekneusd",
         "lesson_id": 6,
         "category_id": 21,
         "description": "Een blessure door druk of een klap, zonder dat het bot gebroken is.",
-        "video": "kneuzen_gekneusd.mp4"
+        "video": "gekneusd.mp4"
     },
     {
         "title": "Onderzoek",
@@ -1964,7 +1964,7 @@
         "lesson_id": 6,
         "category_id": 21,
         "description": "Minder gespannen of gestrest zijn.",
-        "video": "ontspannen_zijn.mp4"
+        "video": "ontspannen.mp4"
     },
     {
         "title": "Bloed",
@@ -1978,7 +1978,7 @@
         "lesson_id": 6,
         "category_id": 21,
         "description": "Het gevoel van duizeligheid of onvastheid.",
-        "video": "dizelig_zijn.mp4"
+        "video": "duizelig.mp4"
     },
     {
         "title": "Pijn",
@@ -2027,7 +2027,7 @@
         "lesson_id": 6,
         "category_id": 21,
         "description": "Een foto van het lichaam die door middel van röntgenstralen wordt genomen.",
-        "video": "rontgenfoto.mp4"
+        "video": "röntgenfoto.mp4"
     },
     {
         "title": "Bloeddruk: Laag",
@@ -2055,14 +2055,14 @@
         "lesson_id": 6,
         "category_id": 21,
         "description": "Het gevoel dat je huid prikt en je wilt krabben.",
-        "video": "jeuk_hebben.mp4"
+        "video": "jeuk.mp4"
     },
     {
         "title": "Uitslag (onderzoek)",
         "lesson_id": 6,
         "category_id": 21,
         "description": "De resultaten van een medisch onderzoek.",
-        "video": "uitslag_onderzoek.mp4"
+        "video": "uitslag.mp4"
     },
     {
         "title": "Gips",
@@ -2090,7 +2090,7 @@
         "lesson_id": 6,
         "category_id": 22,
         "description": "Het dichten van een wond met behulp van naald en draad.",
-        "video": "hechten_hechting.mp4"
+        "video": "hechten.mp4"
     },
     {
         "title": "Operatie / Opereren",
@@ -2118,7 +2118,7 @@
         "lesson_id": 6,
         "category_id": 22,
         "description": "Het lozen van urine uit het lichaam.",
-        "video": "plassen_plas.mp4"
+        "video": "plassen.mp4"
     },
     {
         "title": "Warm (zijn)",
@@ -2153,7 +2153,7 @@
         "lesson_id": 6,
         "category_id": 22,
         "description": "Een lage lichaamstemperatuur hebben of koud aanvoelen.",
-        "video": "koud_hebben_kou.mp4"
+        "video": "koud.mp4"
     },
     {
         "title": "Slapen",
@@ -2195,7 +2195,7 @@
         "lesson_id": 6,
         "category_id": 22,
         "description": "Een vorm van anesthesie waarbij het bewustzijn wordt verlaagd.",
-        "video": "narcosis.mp4"
+        "video": "narcose.mp4"
     },
     {
         "title": "Staan",
@@ -2244,7 +2244,7 @@
         "lesson_id": 7,
         "category_id": 23,
         "description": "Iets is toegestaan of geoorloofd.",
-        "video": "mogen_mag_wel.mp4"
+        "video": "mag wel.mp4"
     },
     {
         "title": "Water",
@@ -2265,28 +2265,28 @@
         "lesson_id": 7,
         "category_id": 23,
         "description": "Iets is niet toegestaan of geoorloofd.",
-        "video": "mogen_mag_niet.mp4"
+        "video": "mag niet.mp4"
     },
     {
         "title": "Weinig / Beetje",
         "lesson_id": 7,
         "category_id": 23,
         "description": "Een kleine hoeveelheid van iets.",
-        "video": "weinig_beetje.mp4"
+        "video": "weinig (beetje).mp4"
     },
     {
         "title": "Bezorgd / Zorgen-maken",
         "lesson_id": 7,
         "category_id": 23,
         "description": "Zich zorgen maken om iets of iemand.",
-        "video": "bezorgd_zorgen_maken.mp4"
+        "video": "bezorgd.mp4"
     },
     {
         "title": "Over (gaan) x",
         "lesson_id": 7,
         "category_id": 23,
         "description": "Een situatie of probleem dat voorbij is.",
-        "video": "over_gaan_x.mp4"
+        "video": "over gaan.mp4"
     },
     {
         "title": "Drinken",
@@ -2300,7 +2300,7 @@
         "lesson_id": 7,
         "category_id": 23,
         "description": "Iemand die gestorven is.",
-        "video": "overleden_zijn.mp4"
+        "video": "overleden.mp4"
     },
     {
         "title": "Eten",
@@ -2314,7 +2314,7 @@
         "lesson_id": 7,
         "category_id": 23,
         "description": "In een kalme toestand verkeren.",
-        "video": "rustig_zijn_x.mp4"
+        "video": "rustig.mp4"
     },
     {
         "title": "Gaan (naar)",
@@ -2335,7 +2335,7 @@
         "lesson_id": 7,
         "category_id": 23,
         "description": "Het gevoel van honger hebben.",
-        "video": "hongeren_hebben.mp4"
+        "video": "honger.mp4"
     },
     {
         "title": "Veel",
@@ -2356,14 +2356,14 @@
         "lesson_id": 7,
         "category_id": 23,
         "description": "Iets wat onaangenaam is.",
-        "video": "vervelend_zijn.mp4"
+        "video": "vervelend.mp4"
     },
     {
         "title": "Komen: Komt goed",
         "lesson_id": 7,
         "category_id": 23,
         "description": "Een geruststelling dat alles in orde zal komen.",
-        "video": "komen_komt_goed.mp4"
+        "video": "komt goed.mp4"
     },
     {
         "title": "Wachten",
@@ -2482,7 +2482,7 @@
         "lesson_id": 7,
         "category_id": 24,
         "description": "Het vrouwelijk deel van het bovenlichaam, bevat de borsten.",
-        "video": "borst_vrouw.mp4"
+        "video": "tiet (vrouw).mp4"
     },
     {
         "title": "Nek",
@@ -2643,7 +2643,7 @@
         "lesson_id": 7,
         "category_id": 25,
         "description": "Het orgaan dat urine opslaat.",
-        "video": "blas.mp4"
+        "video": "blaas.mp4"
     },
     {
         "title": "Hart",
@@ -2657,7 +2657,7 @@
         "lesson_id": 7,
         "category_id": 25,
         "description": "Algemene term voor elk functioneel deel van het lichaam.",
-        "video": "organe.mp4"
+        "video": "orgaan.mp4"
     },
     {
         "title": "Darmen",
