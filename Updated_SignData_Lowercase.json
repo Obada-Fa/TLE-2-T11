@@ -1845,42 +1845,42 @@
         "lesson_id": 5,
         "category_id": 20,
         "description": "De vrouwelijke partner in een relatie.",
-        "video": "vrouw (relatie).mp4"
+        "video": "vrouw_(relatie).mp4"
     },
     {
         "title": "Vrouw (platonisch)",
         "lesson_id": 5,
         "category_id": 20,
         "description": "Een vrouw met wie je geen romantische relatie hebt.",
-        "video": "vrouw (platonisch).mp4"
+        "video": "vrouw_(platonisch).mp4"
     },
     {
         "title": "Man (relatie)",
         "lesson_id": 5,
         "category_id": 20,
         "description": "De mannelijke partner in een relatie.",
-        "video": "man (relatie).mp4"
+        "video": "man_(relatie).mp4"
     },
     {
         "title": "Man (platonisch)",
         "lesson_id": 5,
         "category_id": 20,
         "description": "Een man met wie je geen romantische relatie hebt.",
-        "video": "man (platonisch).mp4"
+        "video": "man_(platonisch).mp4"
     },
     {
         "title": "Vriend (relatie)",
         "lesson_id": 5,
         "category_id": 20,
         "description": "Een mannelijke vriend met wie je een romantische relatie hebt.",
-        "video": "vriend (relatie).mp4"
+        "video": "vriend_(relatie).mp4"
     },
     {
         "title": "Vriend (platonisch)",
         "lesson_id": 5,
         "category_id": 20,
         "description": "Een mannelijke vriend met wie je geen romantische relatie hebt.",
-        "video": "vriend (platonisch).mp4"
+        "video": "vriend_(platonisch).mp4"
     },
     {
         "title": "Ademen",
@@ -1908,7 +1908,7 @@
         "lesson_id": 6,
         "category_id": 21,
         "description": "Het verzorgen of genezen van een ziekte of aandoening.",
-        "video": "Behandelen.mp4"
+        "video": "behandelen.mp4"
     },
     {
         "title": "Breuk / Gebroken",
@@ -2006,7 +2006,7 @@
         "lesson_id": 6,
         "category_id": 21,
         "description": "Een andere vorm van pijn die specifiek wordt genoemd.",
-        "video": "pijn_specifiek.mp4"
+        "video": "pijn.mp4"
     },
     {
         "title": "Bloeddruk: Hoog",
@@ -2072,13 +2072,6 @@
         "video": "gips.mp4"
     },
     {
-        "title": "Ontlasting / Poep",
-        "lesson_id": 6,
-        "category_id": 22,
-        "description": "De afvalstoffen die het lichaam verlaat na spijsvertering.",
-        "video": "ontlasting_poep.mp4"
-    },
-    {
         "title": "Verband",
         "lesson_id": 6,
         "category_id": 22,
@@ -2097,7 +2090,7 @@
         "lesson_id": 6,
         "category_id": 22,
         "description": "Een medische ingreep om iets te behandelen of te verhelpen.",
-        "video": "operatie_opereren.mp4"
+        "video": "operatie.mp4"
     },
     {
         "title": "Verpleegkundige",
@@ -2119,13 +2112,6 @@
         "category_id": 22,
         "description": "Het lozen van urine uit het lichaam.",
         "video": "plassen.mp4"
-    },
-    {
-        "title": "Warm (zijn)",
-        "lesson_id": 6,
-        "category_id": 22,
-        "description": "Een verhoogde lichaamstemperatuur hebben.",
-        "video": "warm_zijn.mp4"
     },
     {
         "title": "Koorts",
@@ -2198,13 +2184,6 @@
         "video": "narcose.mp4"
     },
     {
-        "title": "Staan",
-        "lesson_id": 6,
-        "category_id": 22,
-        "description": "Rechtop staan, het tegenovergestelde van zitten of liggen.",
-        "video": "staan.mp4"
-    },
-    {
         "title": "Eerste Hulp",
         "lesson_id": 6,
         "category_id": 22,
@@ -2244,7 +2223,7 @@
         "lesson_id": 7,
         "category_id": 23,
         "description": "Iets is toegestaan of geoorloofd.",
-        "video": "mag wel.mp4"
+        "video": "mag_wel.mp4"
     },
     {
         "title": "Water",
@@ -2265,14 +2244,14 @@
         "lesson_id": 7,
         "category_id": 23,
         "description": "Iets is niet toegestaan of geoorloofd.",
-        "video": "mag niet.mp4"
+        "video": "mag_niet.mp4"
     },
     {
         "title": "Weinig / Beetje",
         "lesson_id": 7,
         "category_id": 23,
         "description": "Een kleine hoeveelheid van iets.",
-        "video": "weinig (beetje).mp4"
+        "video": "weinig_(beetje).mp4"
     },
     {
         "title": "Bezorgd / Zorgen-maken",
@@ -2286,7 +2265,7 @@
         "lesson_id": 7,
         "category_id": 23,
         "description": "Een situatie of probleem dat voorbij is.",
-        "video": "over gaan.mp4"
+        "video": "over_gaan.mp4"
     },
     {
         "title": "Drinken",
@@ -2363,7 +2342,7 @@
         "lesson_id": 7,
         "category_id": 23,
         "description": "Een geruststelling dat alles in orde zal komen.",
-        "video": "komt goed.mp4"
+        "video": "komt_goed.mp4"
     },
     {
         "title": "Wachten",
@@ -2482,7 +2461,7 @@
         "lesson_id": 7,
         "category_id": 24,
         "description": "Het vrouwelijk deel van het bovenlichaam, bevat de borsten.",
-        "video": "tiet (vrouw).mp4"
+        "video": "tiet_(vrouw).mp4"
     },
     {
         "title": "Nek",
