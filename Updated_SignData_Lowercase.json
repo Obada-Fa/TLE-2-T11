@@ -1024,77 +1024,77 @@
     {
         "title": "Alg. Vraaggebaar",
         "lesson_id": 3,
-        "category_id": 1,
+        "category_id": 25,
         "description": "Een algemeen gebaar voor vragen.",
         "video": "algemeen_vraag_gebaar.mp4"
     },
     {
         "title": "Waarom",
         "lesson_id": 3,
-        "category_id": 1,
+        "category_id": 25,
         "description": "Een vraag naar de reden of oorzaak.",
         "video": "waarom.mp4"
     },
     {
         "title": "Wie",
         "lesson_id": 3,
-        "category_id": 1,
+        "category_id": 25,
         "description": "Een vraag naar een persoon.",
         "video": "wie.mp4"
     },
     {
         "title": "Hoe",
         "lesson_id": 3,
-        "category_id": 1,
+        "category_id": 25,
         "description": "Een vraag naar de manier waarop iets gebeurt.",
         "video": "hoe.mp4"
     },
     {
         "title": "Wanneer",
         "lesson_id": 3,
-        "category_id": 1,
+        "category_id": 25,
         "description": "Een vraag naar tijd of datum.",
         "video": "wanneer.mp4"
     },
     {
         "title": "Waar",
         "lesson_id": 3,
-        "category_id": 1,
+        "category_id": 25,
         "description": "Een vraag naar locatie.",
         "video": "waar.mp4"
     },
     {
         "title": "Hoelang",
         "lesson_id": 3,
-        "category_id": 1,
+        "category_id": 25,
         "description": "Een vraag naar de duur van iets.",
         "video": "hoelang.mp4"
     },
     {
         "title": "Wat",
         "lesson_id": 3,
-        "category_id": 1,
+        "category_id": 25,
         "description": "Een vraag naar een ding of object.",
         "video": "wat.mp4"
     },
     {
         "title": "Hoe laat?",
         "lesson_id": 3,
-        "category_id": 1,
+        "category_id": 25,
         "description": "Een vraag naar het tijdstip van iets.",
         "video": "hoe_laat.mp4"
     },
     {
         "title": "Hoeveel",
         "lesson_id": 3,
-        "category_id": 1,
+        "category_id": 25,
         "description": "Een vraag naar de hoeveelheid of het aantal.",
         "video": "hoeveel.mp4"
     },
     {
         "title": "Welke",
         "lesson_id": 3,
-        "category_id": 1,
+        "category_id": 25,
         "description": "Een vraag naar een keuze of selectie.",
         "video": "welke.mp4"
     },
