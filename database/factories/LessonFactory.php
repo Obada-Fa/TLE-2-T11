@@ -24,7 +24,6 @@ class LessonFactory extends Factory
             5 => 'les 5',
             6 => 'les 6',
             7 => 'les 7',
-            8 => 'les 8',
         ];
     public function definition(): array
     {
