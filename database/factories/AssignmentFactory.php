@@ -45,9 +45,11 @@ class AssignmentFactory extends Factory
         public function definition(): array
     {
         $name = array_shift(self::$assignments);
+        $lesson_id = array_key_first(self::$assignments) + 1;
 
         return [
             'name' => $name,
+            'lesson_id' => $lesson_id,
         ];
     }
 }
