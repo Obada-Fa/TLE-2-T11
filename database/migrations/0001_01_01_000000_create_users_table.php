@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password')->nullable();
-            $table->string('token');
-            $table->date('last_login_at');
+            $table->string('sso_token')->nullable(); // Store SSO Token
+            $table->string('password')->nullable(); // Allow NULL password for SSO users
+            $table->string('api_token', 80)->unique()->nullable(); // API Token for authentication
+            $table->date('last_login_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

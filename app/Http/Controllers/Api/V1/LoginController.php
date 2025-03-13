@@ -1,57 +1,65 @@
 <?php
-
 namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 use Carbon\Carbon;
 
 class LoginController extends Controller
 {
-    public function Login(Request $request)
+    public function login(Request $request)
     {
-        $request->validate([
-            'token' => 'required|string',
-            'name' => 'required|string',
-            'email' => 'required|email',
-        ]);
+        // Get token from URL parameters (HR redirects users with this token)
+        $token = $request->query('token');
+        $name = $request->query('name');
+        $email = $request->query('email');
 
-        $validateUrl = 'https://cmgt.hr.nl/api/validate-sso-token';
-        $response = Http::withHeaders([
-            'token' => $request->token,
-        ])->get($validateUrl);
-
-        if ($response->status() === 401) {
-            return response()->json(['error' => 'Token expired or invalid'], 401);
+        // Ensure all required parameters are present
+        if (!$token || !$email || !$name) {
+            return response()->json(['error' => 'Invalid or missing parameters'], 400);
         }
 
+        // Validate the token with HR API
+        $response = Http::withOptions([
+            'verify' => false // 🚀 Disables SSL verification (TEMPORARY)
+        ])->withHeaders([
+            'Token' => $token,
+        ])->post('https://cmgt.hr.nl/api/validate-sso-token');
 
+
+        if ($response->status() !== 200) {
+            return response()->json(['error' => 'Invalid SSO Token'], 401);
+        }
+
+        // Find or create the user in Laravel
         $user = User::firstOrCreate(
-            ['email' => $request->email],
+            ['email' => $email],
             [
-                'name'  => $request->name,
-                'token' => $request->token,
-                'last_login_at' => Carbon::now()->toDateString(),
+                'name' => $name,
+                'token' => $token,
+                'last_login_at' => Carbon::now(),
             ]
         );
 
-            $user->update([
-                'last_login_at' => Carbon::now()->toDateString(),
-            ]);
+        // Update last login time
+        $user->update([
+            'last_login_at' => Carbon::now(),
+        ]);
 
-        $lastLoginDate = Carbon::now()->toDateString();
+        // Generate a Laravel API token for authenticated requests
+        $apiToken = Str::random(60);
+        $user->update(['api_token' => $apiToken]);
 
-
-        $redirectUrl = "http://145.24.222.40/login/?token=" . urlencode($request->token) .
-            "&email=" . urlencode($request->email) .
-            "&date=" . urlencode($lastLoginDate);
-
-        return redirect()->to($redirectUrl);
+        // Return the token instead of redirecting to the homepage
+        return response()->json([
+            'message' => 'Login successful',
+            'user' => $user,
+            'api_token' => $apiToken,
+        ]);
     }
-
-
 }
+

@@ -11,3 +11,4 @@ Route::get('/developer', function () {
 });
 
 Route::get('/login', [LoginController::class, 'login']);
+Route::get('/login-success', [LoginController::class, 'login']);

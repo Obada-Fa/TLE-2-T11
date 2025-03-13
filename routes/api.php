@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\V1\CategoriesController;
+use App\Http\Controllers\Api\V1\LessonProgressController;
 use App\Http\Controllers\Api\V1\SignsController;
 use App\Http\Controllers\Api\V1\LessonsController;
 use App\Http\Controllers\Api\V1\AssignmentController;
@@ -26,6 +27,13 @@ Route::post('/generate-api-key', [ApiKeyController::class, 'generate'])->name('g
 Route::get('/api-keys', [ApiKeyController::class, 'list'])->name('api-keys');
 Route::delete('/api-keys/{id}', [ApiKeyController::class, 'revoke'])->name('revoke-api-key');
 
+//Route::middleware('auth:sanctum')->group(function () {
+//    Route::post('/complete-lesson', [LessonProgressController::class, 'completeLesson']);
+//    Route::get('/user-progress', [LessonProgressController::class, 'getUserProgress']);
+//});
+
+Route::post('/complete-lesson', [LessonProgressController::class, 'completeLesson']);
+Route::get('/user-progress', [LessonProgressController::class, 'getUserProgress']);
 
 // the route starts with api/
 // To define a route u need to use apiResource see the example below
