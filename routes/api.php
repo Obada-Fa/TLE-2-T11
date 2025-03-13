@@ -56,5 +56,9 @@ Route::middleware('api.key')->get('/protected-resource', function () {
 //routes group version 2
 Route::prefix('v2')->group(function () {
     Route::get('/test', [TestV2Controller::class, 'index']);
+    Route::apiResource('signs',SignsController::class);
+    Route::apiResource('categories',CategoriesController::class);
+    Route::apiResource('lessons',LessonsController::class);
+    Route::apiResource('assignments',AssignmentController::class);
 
 });
