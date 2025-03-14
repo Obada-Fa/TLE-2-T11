@@ -3,7 +3,9 @@
 namespace App\Http;
 
 use App\Http\Middleware\NeutralMiddleware;
+use App\Http\Middleware\ValidateSSOToken;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
+
 
 class Kernel extends HttpKernel
 {
@@ -16,6 +18,7 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
        NeutralMiddleware::class,
+        ValidateSSOToken::class
     ];
 
     protected $middlewareGroups = [
@@ -43,5 +46,6 @@ class Kernel extends HttpKernel
         'neutral' => NeutralMiddleware::class,
         // ✅ Add your API key middleware here
         'api.key' => \App\Http\Middleware\ApiKeyMiddleware::class,
+        'validate.sso' => ValidateSSOToken::class,
     ];
 }

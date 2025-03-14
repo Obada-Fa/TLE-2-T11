@@ -4,11 +4,12 @@ use App\Http\Controllers\Api\V1\CategoriesController;
 use App\Http\Controllers\Api\V1\SignsController;
 use App\Http\Controllers\Api\V1\LessonsController;
 use App\Http\Controllers\Api\V1\AssignmentController;
+use App\Http\Controllers\Api\V1\FavoritesController;
 use App\Http\Controllers\Api\V1\TestController as TestV1Controller;
 use App\Http\Controllers\Api\V2\TestController as TestV2Controller;
-
 use App\Http\Controllers\ApiKeyController;
 use App\Http\Middleware\NeutralMiddleware;
+use App\Http\Middleware\ValidateSSOToken;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -42,6 +43,7 @@ Route::prefix('v1')->middleware(NeutralMiddleware::class)->group(function () {
     Route::apiResource('categories',CategoriesController::class);
     Route::apiResource('lessons',LessonsController::class);
     Route::apiResource('assignments',AssignmentController::class);
+    Route::middleware(ValidateSSOToken::class)->apiResource('favorites', FavoritesController::class);
 
 });
 //Route::apiResource('signs',SignsController::class);
