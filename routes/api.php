@@ -12,6 +12,7 @@ use App\Http\Controllers\Api\V2\V2CategoriesController;
 use App\Http\Controllers\Api\V2\V2SignsController;
 use App\Http\Controllers\Api\V2\V2LessonsController;
 use App\Http\Controllers\Api\V2\V2AssignmentController;
+use App\Http\Controllers\Api\V2\UserController;
 use App\Http\Controllers\ApiKeyController;
 use App\Http\Middleware\NeutralMiddleware;
 use App\Http\Middleware\ValidateSSOToken;
@@ -61,6 +62,7 @@ Route::post('/login', [LoginController::class, 'apiLogin']);
 //routes group version 2
 Route::prefix('v2')->group(function () {
     Route::get('/test', [TestV2Controller::class, 'index']);
+    Route::get('/users',[UserController::class, 'index']);
     Route::apiResource('signs',V2SignsController::class);
     Route::apiResource('categories',V2CategoriesController::class);
     Route::apiResource('lessons',V2LessonsController::class);

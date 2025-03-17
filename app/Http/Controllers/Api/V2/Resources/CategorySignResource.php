@@ -23,6 +23,7 @@ class CategorySignResource extends JsonResource
         return [
             'id' =>$this->id,
             'name' => $this->name,
+//            'lessons' => $,
             'signs' => $this->signs->map
             (function ($sign) {
                 return [
