@@ -7,6 +7,10 @@ use App\Http\Controllers\Api\V1\AssignmentController;
 use App\Http\Controllers\Api\V1\FavoritesController;
 use App\Http\Controllers\Api\V1\TestController as TestV1Controller;
 use App\Http\Controllers\Api\V2\TestController as TestV2Controller;
+use App\Http\Controllers\Api\V2\V2CategoriesController;
+use App\Http\Controllers\Api\V2\V2SignsController;
+use App\Http\Controllers\Api\V2\V2LessonsController;
+use App\Http\Controllers\Api\V2\V2AssignmentController;
 use App\Http\Controllers\ApiKeyController;
 use App\Http\Middleware\NeutralMiddleware;
 use App\Http\Middleware\ValidateSSOToken;
@@ -30,9 +34,7 @@ Route::delete('/api-keys/{id}', [ApiKeyController::class, 'revoke'])->name('revo
 
 // the route starts with api/
 // To define a route u need to use apiResource see the example below
-//Route::apiResource('signs',SignsController::class);
-//
-//Route::apiResource('categories',CategoriesController::class);
+
 
 
 Route::prefix('v1')->middleware(NeutralMiddleware::class)->group(function () {
@@ -41,15 +43,12 @@ Route::prefix('v1')->middleware(NeutralMiddleware::class)->group(function () {
 
     Route::apiResource('signs',SignsController::class);
     Route::apiResource('categories',CategoriesController::class);
-    Route::apiResource('lessons',LessonsController::class);
-    Route::apiResource('assignments',AssignmentController::class);
+    Route::apiResource('lessons',V2LessonsController::class);
+    Route::apiResource('assignments',V2AssignmentController::class);
     Route::middleware(ValidateSSOToken::class)->apiResource('favorites', FavoritesController::class);
 
 });
-//Route::apiResource('signs',SignsController::class);
-//
-//Route::apiResource('categories',CategoriesController::class);
-//Route::apiResource('lessons',Lesson::class);
+
 
 Route::middleware('api.key')->get('/protected-resource', function () {
     return response()->json(['message' => 'Access granted']);
@@ -60,7 +59,7 @@ Route::prefix('v2')->group(function () {
     Route::get('/test', [TestV2Controller::class, 'index']);
     Route::apiResource('signs',SignsController::class);
     Route::apiResource('categories',CategoriesController::class);
-    Route::apiResource('lessons',LessonsController::class);
-    Route::apiResource('assignments',AssignmentController::class);
+    Route::apiResource('lessons',V2LessonsController::class);
+    Route::apiResource('assignments',V2AssignmentController::class);
 
 });

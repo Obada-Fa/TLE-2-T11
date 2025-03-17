@@ -8,13 +8,14 @@ use App\Http\Controllers\Controller;
 use App\Models\Sign;
 use Illuminate\Http\Request;
 
-class SignsController extends Controller
+class V2SignsController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index(Request $request)
     {
+
         if ($request->isMethod('GET'))
             $response = response()->json(
                 [

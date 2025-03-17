@@ -10,6 +10,11 @@ class AssignmentResult extends Model
 {
     //
     use HasFactory;
+    protected $fillable = [
+        'sign_id',
+        'user_id',
+        'is_correct'
+    ];
 
     public function signs(): BelongsTo
     {

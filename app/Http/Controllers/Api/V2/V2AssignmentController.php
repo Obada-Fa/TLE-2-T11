@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Assignment;
 use Illuminate\Http\Request;
 
-class AssignmentController extends Controller
+class V2AssignmentController extends Controller
 {
     /**
      * Display a listing of the resource.
