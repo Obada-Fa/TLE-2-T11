@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api\V1;
+namespace App\Http\Controllers\Api\V2;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
@@ -30,7 +30,7 @@ class LoginController extends Controller
         }
 
 
-        $user = User::firstOrCreate(
+        $user = User::updateOrCreate(
             ['email' => $request->email],
             [
                 'name'  => $request->name,
@@ -39,9 +39,8 @@ class LoginController extends Controller
             ]
         );
 
-            $user->update([
-                'last_login_at' => Carbon::now()->toDateString(),
-            ]);
+        $user->save();
+
 
         $lastLoginDate = Carbon::now()->toDateString();
 
