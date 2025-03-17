@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use function PHPUnit\Framework\isEmpty;
 
-class LessonsController extends Controller
+class V2LessonsController extends Controller
 {
     /**
      * Display a listing of the resource.
