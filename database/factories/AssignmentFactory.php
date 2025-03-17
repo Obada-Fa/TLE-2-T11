@@ -14,40 +14,42 @@ class AssignmentFactory extends Factory
      *
      * @return array<string, mixed>
      */
-
     private static $assignments = [
-            1 => 'Vraagwoorden',
-            2 => 'Tijdens de les',
-            3 => 'Kennis maken',
-            4 => 'Begroetingen',
-            5 => 'Werkwoorden',
-            6 => 'Luisterhouding',
-            7 => 'Gevoelens',
-            8 => 'Tellen',
-            9 => 'Dagen & maanden overig',
-            10 => 'Maanden',
-            11 => 'Dagen',
-            12 => 'Afspraak maken',
-            13 => 'Getallen',
-            14 => 'Klok kijken',
-            15 => 'Doktersbezoek algemeen',
-            16 => 'Anamnese',
-            17 => 'Steden',
-            18 => 'Gezin',
-            19 => 'Relaties',
-            20 => 'Onderzoek en lichamelijke klachten',
-            21 => 'Ziekenhuisopname deel 1',
-            22 => 'Ziekenhuisopname deel 2',
-            23 => 'Lichaamsdelen',
-            24 => 'Organen',
-        ];
+        ['name' => 'Vraagwoorden', 'lesson_id' => 1],
+        ['name' => 'Tijdens de les', 'lesson_id' => 1],
+        ['name' => 'Kennis maken', 'lesson_id' => 1],
+        ['name' => 'Begroetingen', 'lesson_id' => 1],
+        ['name' => 'Werkwoorden', 'lesson_id' => 2],
+        ['name' => 'Luisterhouding', 'lesson_id' => 2],
+        ['name' => 'Gevoelens', 'lesson_id' => 2],
+        ['name' => 'Tellen', 'lesson_id' => 2],
+        ['name' => 'Dagen & maanden overig', 'lesson_id' => 3],
+        ['name' => 'Maanden', 'lesson_id' => 3],
+        ['name' => 'Dagen', 'lesson_id' => 3],
+        ['name' => 'Afspraak maken', 'lesson_id' => 3],
+        ['name' => 'Vraagwoorden 2', 'lesson_id' => 3],
+        ['name' => 'Getallen', 'lesson_id' => 4],
+        ['name' => 'Klok kijken', 'lesson_id' => 4],
+        ['name' => 'Doktersbezoek algemeen', 'lesson_id' => 5],
+        ['name' => 'Anamnese', 'lesson_id' => 5],
+        ['name' => 'Steden', 'lesson_id' => 5],
+        ['name' => 'Gezin', 'lesson_id' => 5],
+        ['name' => 'Relaties', 'lesson_id' => 5],
+        ['name' => 'Onderzoek en lichamelijke klachten', 'lesson_id' => 6],
+        ['name' => 'Ziekenhuisopname deel 1', 'lesson_id' => 6],
+        ['name' => 'Ziekenhuisopname deel 2', 'lesson_id' => 7],
+        ['name' => 'Lichaamsdelen', 'lesson_id' => 7],
+        ['name' => 'Organen', 'lesson_id' => 7],
+    ];
 
-        public function definition(): array
+    public function definition(): array
     {
-        $name = array_shift(self::$assignments);
+        // Pak het eerste item uit de array en verwijder het
+        $assignment = array_shift(self::$assignments);
 
         return [
-            'name' => $name,
+            'name' => $assignment['name'],
+            'lesson_id' => $assignment['lesson_id'],
         ];
     }
 }
