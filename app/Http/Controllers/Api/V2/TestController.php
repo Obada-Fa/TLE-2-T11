@@ -13,8 +13,16 @@ class TestController extends Controller
     public function index()
     {
 
-//        $lessons = Lesson::with('assignments.categories.signs')->get();
-//
+        $categories = Category::with('assignments.lesson')->get();
+        $categories->map(function ($category){
+            foreach ($category->assignments as $assignment){
+                dd($assignment->lesson);
+//            foreach ($assignment->lesson as $lessonn){
+//            }
+            }
+        });
+        dd($categories);
+
 //        $lessons->map(function ($lesson) {
 //            foreach ($lesson->assignments as $assignment) {
 //                dump($assignment->categories);

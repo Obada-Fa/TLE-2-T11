@@ -44,8 +44,8 @@ Route::prefix('v1')->middleware(NeutralMiddleware::class)->group(function () {
 
     Route::apiResource('signs',SignsController::class);
     Route::apiResource('categories',CategoriesController::class);
-    Route::apiResource('lessons',V2LessonsController::class);
-    Route::apiResource('assignments',V2AssignmentController::class);
+    Route::apiResource('lessons',LessonsController::class);
+    Route::apiResource('assignments',AssignmentController::class);
     Route::middleware(ValidateSSOToken::class)->apiResource('favorites', FavoritesController::class);
 
 });
@@ -61,8 +61,8 @@ Route::post('/login', [LoginController::class, 'apiLogin']);
 //routes group version 2
 Route::prefix('v2')->group(function () {
     Route::get('/test', [TestV2Controller::class, 'index']);
-    Route::apiResource('signs',SignsController::class);
-    Route::apiResource('categories',CategoriesController::class);
+    Route::apiResource('signs',V2SignsController::class);
+    Route::apiResource('categories',V2CategoriesController::class);
     Route::apiResource('lessons',V2LessonsController::class);
     Route::apiResource('assignments',V2AssignmentController::class);
 
