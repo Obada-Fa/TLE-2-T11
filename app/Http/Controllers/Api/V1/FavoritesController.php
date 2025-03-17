@@ -76,14 +76,18 @@ class FavoritesController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Favorite $favorite)
+    public function destroy($sign_id)
     {
-        if ($favorite->user_id !== auth()->id()) {
-            return response()->json(['error' => 'You can only delete your own favorites'],403);
+        $favorite = Favorite::where('sign_id', $sign_id)
+            ->where('user_id', auth()->id())
+            ->first();
+
+        if (!$favorite) {
+            return response()->json(['error' => 'Favorite not found'], 404);
         }
-        else {
-            $favorite->delete();
-            return response()->json(['success' => 'Favorite deleted'],200);
-        }
+
+        $favorite->delete();
+        return response()->json(['success' => 'Favorite deleted'], 200);
     }
+
 }
