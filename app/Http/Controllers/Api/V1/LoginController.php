@@ -39,9 +39,9 @@ class LoginController extends Controller
             ]
         );
 
-            $user->update([
-                'last_login_at' => Carbon::now()->toDateString(),
-            ]);
+        $user->last_login_at = Carbon::now()->toDateString();
+        $user->save();
+
 
         $lastLoginDate = Carbon::now()->toDateString();
 
