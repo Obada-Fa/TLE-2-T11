@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\V1\LessonsController;
 use App\Http\Controllers\Api\V1\AssignmentController;
 use App\Http\Controllers\Api\V1\FavoritesController;
 use App\Http\Controllers\Api\V1\TestController as TestV1Controller;
+use App\Http\Controllers\Api\V2\AssignmentResultController;
 use App\Http\Controllers\Api\V2\TestController as TestV2Controller;
 use App\Http\Controllers\Api\V2\V2CategoriesController;
 use App\Http\Controllers\Api\V2\V2SignsController;
@@ -64,6 +65,7 @@ Route::prefix('v2')->group(function () {
     Route::get('/test', [TestV2Controller::class, 'index']);
     Route::get('/users',[UserController::class, 'index']);
     Route::apiResource('signs',SignsController::class);
+    Route::apiResource('assignment_result',AssignmentResultController::class);
     Route::apiResource('categories',CategoriesController::class);
     Route::apiResource('lessons',V2LessonsController::class);
     Route::apiResource('assignments',V2AssignmentController::class);

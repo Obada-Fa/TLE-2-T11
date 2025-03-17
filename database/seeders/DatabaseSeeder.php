@@ -24,9 +24,10 @@ class DatabaseSeeder extends Seeder
             ]);
 
         $this->call([
-            SignSeeder::class,
-            AssignmentResultSeeder::class,
-            FavoriteSeeder::class
+            LessonSeeder::class,
+            AssignmentSeeder::class,
+            CategorySeeder::class,
+            AssignmentCategorySeeder::class,
         ]);
 
     }
