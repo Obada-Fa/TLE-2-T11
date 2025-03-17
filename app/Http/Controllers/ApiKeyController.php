@@ -5,27 +5,32 @@ namespace App\Http\Controllers;
 use App\Models\ApiKey;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Auth;
+
 
 class ApiKeyController extends Controller
 {
     public function generate(Request $request)
     {
-        // ✅ REMOVE API KEY CHECK (Allow users to generate their first API key)
+        $user = Auth::user(); // ✅ Get the authenticated user
 
-        // Generate a unique API key
+        if (!$user) {
+            return response()->json(['error' => 'Unauthorized'], 401);
+        }
+
         $plainTextKey = Str::random(60);
         $hashedKey = hash('sha256', $plainTextKey);
 
-        // Store in database (Without requiring an existing API key)
+        // ✅ Store the API key in the database
         $apiKey = ApiKey::create([
-            'user_id' => 1, // ❗ Temporary fix (Replace with actual user logic later)
+            'user_id' => $user->id,
             'key' => $hashedKey,
             'name' => $request->input('name'),
         ]);
 
         return response()->json([
-            'api_key' => $plainTextKey,
-            'message' => 'Save this API key securely. You won’t see it again.'
+            'api_key' => $plainTextKey, // ✅ Return the new API key
+            'message' => 'Save this API key securely. You won’t see it again.',
         ], 201);
     }
 

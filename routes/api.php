@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\V1\CategoriesController;
+use App\Http\Controllers\Api\V1\LoginController;
 use App\Http\Controllers\Api\V1\SignsController;
 use App\Http\Controllers\Api\V1\LessonsController;
 use App\Http\Controllers\Api\V1\AssignmentController;
@@ -16,15 +17,15 @@ use Illuminate\Support\Facades\Route;
 //    return $request->user();
 //})->middleware('auth:sanctum');
 
-//Route::middleware('auth:sanctum')->group(function () {
-//    Route::post('/generate-api-key', [ApiKeyController::class, 'generate'])->name('generate-api-key');
-//    Route::get('/api-keys', [ApiKeyController::class, 'list'])->name('api-keys');
-//    Route::delete('/api-keys/{id}', [ApiKeyController::class, 'revoke'])->name('revoke-api-key');
-//});
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post('/generate-api-key', [ApiKeyController::class, 'generate'])->name('generate-api-key');
+    Route::get('/api-keys', [ApiKeyController::class, 'list'])->name('api-keys');
+    Route::delete('/api-keys/{id}', [ApiKeyController::class, 'revoke'])->name('revoke-api-key');
+});
 
-Route::post('/generate-api-key', [ApiKeyController::class, 'generate'])->name('generate-api-key');
-Route::get('/api-keys', [ApiKeyController::class, 'list'])->name('api-keys');
-Route::delete('/api-keys/{id}', [ApiKeyController::class, 'revoke'])->name('revoke-api-key');
+//Route::post('/generate-api-key', [ApiKeyController::class, 'generate'])->name('generate-api-key');
+//Route::get('/api-keys', [ApiKeyController::class, 'list'])->name('api-keys');
+//Route::delete('/api-keys/{id}', [ApiKeyController::class, 'revoke'])->name('revoke-api-key');
 
 
 // the route starts with api/
@@ -52,6 +53,9 @@ Route::prefix('v1')->middleware(NeutralMiddleware::class)->group(function () {
 Route::middleware('api.key')->get('/protected-resource', function () {
     return response()->json(['message' => 'Access granted']);
 });
+
+Route::post('/login', [LoginController::class, 'apiLogin']);
+
 
 //routes group version 2
 Route::prefix('v2')->group(function () {
