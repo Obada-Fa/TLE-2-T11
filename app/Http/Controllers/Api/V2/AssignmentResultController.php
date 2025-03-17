@@ -32,7 +32,7 @@ class AssignmentResultController extends Controller
     {
         // 1. Validatie van de verplichte velden
         $validatedData = $request->validate([
-            'sign_id' => 'required|max:255',
+            'sign_id' => 'required',
             'user_id' => 'required',
             'is_correct' => 'required|boolean',
         ]);
