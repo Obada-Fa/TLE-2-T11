@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers\Api\V2;
 
+use App\Http\Controllers\Api\V2\Resources\AssignmentResource;
 use App\Http\Controllers\Controller;
+use App\Models\Assignment;
 use App\Models\AssignmentResult;
-use App\Models\Sign;
 use Illuminate\Http\Request;
 
 class AssignmentResultController extends Controller
@@ -12,10 +13,23 @@ class AssignmentResultController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        if ($request->isMethod('GET')) {
+            $response = response()->json([
+                'message' => 'AssignmentResults successfully retrieved',
+                'collection' => AssignmentResult::all() // Direct de collectie retourneren
+            ], 200);
+
+            $response->headers->set('Access-Control-Allow-Methods', 'GET, OPTIONS');
+            return $response;
+        }
+
+        return response()->json([
+            'message' => 'Method not allowed'
+        ], 405);
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -37,19 +51,25 @@ class AssignmentResultController extends Controller
             'is_correct' => 'required|boolean',
         ]);
 
-        // 2. Maak een nieuw AssignmentResult object en sla het op
+        // 2. Controleer of er al een bestaand record is met dezelfde sign_id en user_id
+        AssignmentResult::where('sign_id', $validatedData['sign_id'])
+            ->where('user_id', $validatedData['user_id'])
+            ->delete(); // Verwijdert het bestaande record als het bestaat
+
+        // 3. Maak een nieuw AssignmentResult object en sla het op
         $assignmentResult = new AssignmentResult();
         $assignmentResult->sign_id = $validatedData['sign_id'];
         $assignmentResult->user_id = $validatedData['user_id'];
         $assignmentResult->is_correct = $validatedData['is_correct'];
         $assignmentResult->save();
 
-        // 3. Geef een succesvolle response terug
+        // 4. Geef een succesvolle response terug
         return response()->json([
-            'message' => 'Assignment result successfully created!',
-            'data' => $assignmentResult,  // Retourneer het opgeslagen object, niet de gevalidede data
+            'message' => 'Assignment result successfully created (old entry replaced if existed)!',
+            'data' => $assignmentResult,
         ], 201);
     }
+
 
 
     /**
