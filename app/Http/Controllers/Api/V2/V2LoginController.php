@@ -50,7 +50,8 @@ class V2LoginController extends Controller
 
         $redirectUrl = "http://145.24.222.40/login/?token=" . urlencode($request->token) .
             "&email=" . urlencode($request->email) .
-            "&date=" . urlencode($lastLoginDate);
+            "&date=" . urlencode($lastLoginDate) .
+            "&id=" . urlencode($user->id);
 
         return redirect()->to($redirectUrl);
     }
