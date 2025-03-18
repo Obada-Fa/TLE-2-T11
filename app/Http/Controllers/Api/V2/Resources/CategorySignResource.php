@@ -23,12 +23,13 @@ class CategorySignResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
+            'message' => 'Gebruik de map functie svp op de lessons',
             'lessons' => $this->assignments->map
-            (function ($assignment){
+            (function ($assignment) {
                 return $assignment->lesson ? [
                     'id' => $assignment->lesson->id,
                     'name' => $assignment->lesson->name,
-                ]: null;
+                ] : null;
             }),
             'signs' => $this->signs->map
             (function ($sign) {
