@@ -7,11 +7,13 @@ use App\Http\Controllers\Api\V1\LessonsController;
 use App\Http\Controllers\Api\V1\AssignmentController;
 use App\Http\Controllers\Api\V1\FavoritesController;
 use App\Http\Controllers\Api\V1\TestController as TestV1Controller;
+use App\Http\Controllers\Api\V2\AssignmentResultController;
 use App\Http\Controllers\Api\V2\TestController as TestV2Controller;
 use App\Http\Controllers\Api\V2\V2CategoriesController;
 use App\Http\Controllers\Api\V2\V2SignsController;
 use App\Http\Controllers\Api\V2\V2LessonsController;
 use App\Http\Controllers\Api\V2\V2AssignmentController;
+use App\Http\Controllers\Api\V2\UserController;
 use App\Http\Controllers\ApiKeyController;
 use App\Http\Middleware\NeutralMiddleware;
 use App\Http\Middleware\ValidateSSOToken;
@@ -44,8 +46,8 @@ Route::prefix('v1')->middleware(NeutralMiddleware::class)->group(function () {
 
     Route::apiResource('signs',SignsController::class);
     Route::apiResource('categories',CategoriesController::class);
-    Route::apiResource('lessons',V2LessonsController::class);
-    Route::apiResource('assignments',V2AssignmentController::class);
+    Route::apiResource('lessons',LessonsController::class);
+    Route::apiResource('assignments',AssignmentController::class);
     Route::middleware(ValidateSSOToken::class)->apiResource('favorites', FavoritesController::class);
 
 });
@@ -61,8 +63,10 @@ Route::post('/login', [LoginController::class, 'apiLogin']);
 //routes group version 2
 Route::prefix('v2')->group(function () {
     Route::get('/test', [TestV2Controller::class, 'index']);
-    Route::apiResource('signs',SignsController::class);
-    Route::apiResource('categories',CategoriesController::class);
+    Route::get('/users',[UserController::class, 'index']);
+    Route::apiResource('signs',V2SignsController::class);
+    Route::apiResource('categories',V2CategoriesController::class);
+    Route::apiResource('assignment_result',AssignmentResultController::class);
     Route::apiResource('lessons',V2LessonsController::class);
     Route::apiResource('assignments',V2AssignmentController::class);
 

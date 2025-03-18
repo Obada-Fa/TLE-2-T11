@@ -82,6 +82,7 @@ class LoginController extends Controller
 
         $user->update([
             'last_login_at' => Carbon::now()->toDateString(),
+            'token' => $request->token,
         ]);
 
         $lastLoginDate = Carbon::now()->toDateString();
