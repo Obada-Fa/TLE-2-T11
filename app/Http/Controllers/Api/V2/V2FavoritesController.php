@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api\V1;
+namespace App\Http\Controllers\Api\V2;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -8,10 +8,9 @@ use App\Models\Favorite;
 use App\Models\User;
 use App\Models\Sign;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Resources\FavoriteResource;
 
 
-class FavoritesController extends Controller
+class V2FavoritesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,7 +18,7 @@ class FavoritesController extends Controller
     public function index()
     {
         $favorites = Auth::user()->favorites()->with('sign')->get();
-        return FavoriteResource::collection($favorites);
+        return response()->json($favorites);
     }
 
     /**

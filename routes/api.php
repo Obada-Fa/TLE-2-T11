@@ -14,6 +14,7 @@ use App\Http\Controllers\Api\V2\V2SignsController;
 use App\Http\Controllers\Api\V2\V2LessonsController;
 use App\Http\Controllers\Api\V2\V2AssignmentController;
 use App\Http\Controllers\Api\V2\UserController;
+use App\Http\Controllers\Api\V2\V2FavoritesController;
 use App\Http\Controllers\ApiKeyController;
 use App\Http\Middleware\NeutralMiddleware;
 use App\Http\Middleware\ValidateSSOToken;
@@ -69,5 +70,6 @@ Route::prefix('v2')->group(function () {
     Route::apiResource('assignment_result',AssignmentResultController::class);
     Route::apiResource('lessons',V2LessonsController::class);
     Route::apiResource('assignments',V2AssignmentController::class);
+    Route::middleware(ValidateSSOToken::class)->apiResource('favorites', V2FavoritesController::class);
 
 });
