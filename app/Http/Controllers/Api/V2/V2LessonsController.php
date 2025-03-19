@@ -25,8 +25,6 @@ class V2LessonsController extends Controller
             $response->headers->set('Access-Control-Allow-Methods', 'GET, OPTIONS');
             return $response;
 
-        } else {
-            return response()->json([], 404);
         }
 
 
