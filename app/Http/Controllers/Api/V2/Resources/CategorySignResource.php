@@ -15,14 +15,22 @@ class CategorySignResource extends JsonResource
     public function toArray(Request $request): array
     {
         // $this output een de category resource wat gekoppeld is aan de model
-            // In de model heb je relaties en daarmee koppel je dus de signs tabel opnieuw
-            // Deze map je zodat je alles weer kan zien.
+        // In de model heb je relaties en daarmee koppel je dus de signs tabel opnieuw
+        // Deze map je zodat je alles weer kan zien.
         //dd($this->signs);
 
 
         return [
-            'id' =>$this->id,
+            'id' => $this->id,
             'name' => $this->name,
+            'message' => 'Gebruik de map functie svp op de lessons',
+            'lessons' => $this->assignments->map
+            (function ($assignment) {
+                return $assignment->lesson ? [
+                    'id' => $assignment->lesson->id,
+                    'name' => $assignment->lesson->name,
+                ] : null;
+            }),
             'signs' => $this->signs->map
             (function ($sign) {
                 return [
@@ -30,7 +38,7 @@ class CategorySignResource extends JsonResource
                     'title' => $sign->title,
                     'description' => $sign->description,
                     'image' => $sign->image,
-                    'video' => asset('storage/videos/' .$sign->video)
+                    'video' => asset('storage/videos/' . $sign->video)
                 ];
             })];
     }

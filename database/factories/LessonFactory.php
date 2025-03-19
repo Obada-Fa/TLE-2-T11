@@ -20,10 +20,10 @@ class LessonFactory extends Factory
             1 => 'Les 1',
             2 => 'Les 2',
             3 => 'Les 3',
-            4 => 'les 4',
-            5 => 'les 5',
-            6 => 'les 6',
-            7 => 'les 7',
+            4 => 'Les 4',
+            5 => 'Les 5',
+            6 => 'Les 6',
+            7 => 'Les 7',
         ];
     public function definition(): array
     {
