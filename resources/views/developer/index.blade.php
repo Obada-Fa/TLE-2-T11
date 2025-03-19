@@ -1,30 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer API Keys</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<div class="container">
-    <h2>Developer API Keys</h2>
+<body class="bg-gray-100 text-gray-900">
+
+<!-- ✅ Navbar with Updated Green Color -->
+<header class="bg-[#028571] p-4 text-white flex justify-between items-center shadow-md">
+    <h1 class="text-xl font-bold">Gebarentaal</h1>
+    <nav>
+        <a href="/" class="mr-4 hover:underline">Home</a>
+        <a href="/developer" class="hover:underline">Developer</a>
+    </nav>
+</header>
+
+<!-- ✅ Main Container -->
+<div class="max-w-3xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
+    <h2 class="text-2xl font-semibold text-[#028571] mb-4">Developer API Keys</h2>
 
     <!-- Generate API Key Form -->
-    <form id="generate-form">
-        <input type="text" id="key-name" placeholder="API Key Name" required>
-        <button type="submit">Generate API Key</button>
+    <form id="generate-form" class="flex gap-2">
+        <input type="text" id="key-name" placeholder="API Key Name" required
+               class="border border-gray-300 p-2 flex-grow rounded-lg focus:ring focus:ring-[#028571]">
+        <button type="submit" class="bg-[#028571] text-white px-4 py-2 rounded-lg hover:bg-green-700">
+            Generate API Key
+        </button>
     </form>
 
-    <h3>Your API Keys</h3>
-    <ul id="api-key-list"></ul>
+    <!-- API Key List -->
+    <h3 class="mt-6 text-lg font-semibold">Your API Keys</h3>
+    <ul id="api-key-list" class="mt-2 space-y-2"></ul>
 </div>
 
 <script>
-    // Function to fetch API keys from the backend on page load
     async function fetchApiKeys() {
-        const apiKey = localStorage.getItem("api_key"); // Retrieve stored API key
+        const apiKey = localStorage.getItem("api_key");
         if (!apiKey) {
-            document.getElementById("api-key-list").innerHTML = "<p>No API Key Found. Generate one!</p>";
+            document.getElementById("api-key-list").innerHTML = "<p class='text-gray-500'>No API Key Found. Generate one!</p>";
             return;
         }
 
@@ -40,17 +55,19 @@
             const keys = await response.json();
             let list = "";
             keys.forEach(key => {
-                list += `<li>${key.name} - <strong>Hidden for security</strong>
-                    <button onclick="revokeApiKey(${key.id})">Revoke</button>
-                </li>`;
+                list += `
+                    <li class="bg-gray-100 p-3 rounded-lg flex justify-between items-center shadow">
+                        <span class="text-gray-700">${key.name} - <strong>Hidden for security</strong></span>
+                        <button onclick="revokeApiKey(${key.id})"
+                            class="text-red-600 hover:text-red-800">Revoke</button>
+                    </li>`;
             });
             document.getElementById("api-key-list").innerHTML = list;
         } else {
-            document.getElementById("api-key-list").innerHTML = "<p>Invalid API Key.</p>";
+            document.getElementById("api-key-list").innerHTML = "<p class='text-red-600'>Invalid API Key.</p>";
         }
     }
 
-    // Function to generate a new API key
     async function generateApiKey(event) {
         event.preventDefault();
         const name = document.getElementById("key-name").value;
@@ -67,14 +84,13 @@
         if (response.ok) {
             const data = await response.json();
             alert("API Key generated: " + data.api_key + "\nSave it securely!");
-            localStorage.setItem("api_key", data.api_key); // Store API key
-            fetchApiKeys(); // ✅ Refresh API key list immediately after generating
+            localStorage.setItem("api_key", data.api_key);
+            fetchApiKeys();
         } else {
             alert("Failed to generate API Key.");
         }
     }
 
-    // Function to revoke an API key
     async function revokeApiKey(id) {
         const apiKey = localStorage.getItem("api_key");
         if (!apiKey) return alert("No API Key Found.");
@@ -90,16 +106,13 @@
 
         if (response.ok) {
             alert("API Key revoked successfully.");
-            fetchApiKeys(); // ✅ Refresh API key list immediately after deletion
+            fetchApiKeys();
         } else {
             alert("Failed to revoke API key.");
         }
     }
 
-    // Attach event listener to form for generating API keys
     document.getElementById("generate-form").addEventListener("submit", generateApiKey);
-
-    // ✅ Load API keys immediately when the page loads
     document.addEventListener("DOMContentLoaded", fetchApiKeys);
 </script>
 
