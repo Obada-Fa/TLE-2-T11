@@ -23,7 +23,12 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/user', function (Request $request) {
 //    return $request->user();
 //})->middleware('auth:sanctum');
-
+Route::get('/developer', function () {
+    return view('developer.index');
+});
+Route::get('/api/developer', function () {
+    return view('developer.index');
+});
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/generate-api-key', [ApiKeyController::class, 'generate'])->name('generate-api-key');
     Route::get('/api-keys', [ApiKeyController::class, 'list'])->name('api-keys');
