@@ -20,12 +20,11 @@ class LessonResource extends JsonResource
             'name' => $this->name,
             'total_signs' => $this->assignments->map
             (function ($assignment) {
-                return
-                    $assignment->categories->map
+                return $assignment->categories->map
                 (function ($category) {
-                    return $category->signs;
+                    return $category->signs->count();
                 });
-            })->count(),
+            }),
             // De les heeft ook een opdrachten kolom,
             // Dit zorgt ervoor dat alle informatie gelijk wordt mee gestuurd naar de detail pagina.
             'assignments' => $this->assignments->map
