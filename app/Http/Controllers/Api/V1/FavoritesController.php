@@ -8,7 +8,7 @@ use App\Models\Favorite;
 use App\Models\User;
 use App\Models\Sign;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Resources\FavoriteResource;
+use App\Http\Controllers\Api\V1\Resources\FavoriteResource;
 
 
 class FavoritesController extends Controller
