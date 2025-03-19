@@ -14,13 +14,12 @@ class LessonResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-//        return parent::toArray($request);
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'total_signs' => $this->assignments->map
+            'total_signs' => $this->assignments->sum
             (function ($assignment) {
-                return $assignment->categories->map
+                return $assignment->categories->sum
                 (function ($category) {
                     return $category->signs->count();
                 });
