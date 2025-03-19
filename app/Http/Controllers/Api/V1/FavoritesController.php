@@ -8,6 +8,7 @@ use App\Models\Favorite;
 use App\Models\User;
 use App\Models\Sign;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Resources\FavoriteResource;
 
 
 class FavoritesController extends Controller
@@ -18,7 +19,7 @@ class FavoritesController extends Controller
     public function index()
     {
         $favorites = Auth::user()->favorites()->with('sign')->get();
-        return response()->json($favorites);
+        return FavoriteResource::collection($favorites);
     }
 
     /**
