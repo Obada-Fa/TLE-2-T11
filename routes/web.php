@@ -10,5 +10,5 @@ Route::get('/developer', function () {
 });
 
 // ✅ Browser Login Route
-Route::get('/login', [V2LoginController::class, 'login']);
+Route::get('/login', [V2LoginController::class, 'Login']);
 

@@ -19,7 +19,6 @@ class LoginController extends Controller
         ]);
 
         $validateUrl = 'https://cmgt.hr.nl/api/validate-sso-token';
-        dd($validateUrl);
         $response = Http::withOptions([
             'verify' => false // ✅ Skips SSL verification
         ])->withHeaders([
