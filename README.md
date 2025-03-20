@@ -18,7 +18,7 @@ php artisan install
 
 4. Run migrations
 ```bash
-npm run migrate:up
+php artisan migrate
 ```
 
 5. Run project with artisan serve for development
