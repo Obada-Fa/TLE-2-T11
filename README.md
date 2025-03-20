@@ -1,66 +1,82 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## How to run:
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+1. Clone the repository
+```bash
+git https://github.com/Obada-Fa/TLE-2-T11.git
+```
 
-## About Laravel
+2. Navigate to the created directory
+```bash
+cd TLE2-2-T11
+```
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+3. Install dependencies
+```bash
+npm install
+php artisan install
+```
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+4. Run migrations
+```bash
+npm run migrate:up
+```
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+5. Run project with artisan serve for development
+```bash
+php artisan serve
+```
 
-## Learning Laravel
+## Database migrations:
+Create a new migration
+```bash
+php artisan make:migration create_name_table --create=name
+```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Run Migrations
+```bash
+php artisan migrate
+```
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Migrate fresh
+```bash
+php artisan migrate:fresh
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Endpoints V2
+| HTTP Method  | Endpoint                           | Controller & Action                                | Required Headers | Content-Type       | Accept            | GET Parameters | Body            | Response            |
+|-------------|-----------------------------------|---------------------------------------------------|------------------|--------------------|------------------|---------------|----------------|----------------------|
+| GET | HEAD  | api/api-keys                      | ApiKeyController@list                            | -                | -                  | -                | -              | API keys list       |
+| DELETE      | api/api-keys/{id}                 | ApiKeyController@revoke                          | -                | -                  | -                | -              | API key revoked     |
+| POST        | api/generate-api-key             | ApiKeyController@generate                        | -                | application/json   | application/json  | -              | -                | API key created      |
+| POST        | api/login                        | Api\V1\LoginController@apiLogin                 | -                | application/json   | application/json  | -              | email, password   | Token               |
+| GET | HEAD  | api/protected-resource           | -                                               | Authorization    | application/json   | application/json  | -              | -                | Protected data       |
+| GET | HEAD  | api/v1/assignments               | Api\V1\AssignmentController@index               | Authorization    | application/json   | application/json  | -              | -                | Assignments list     |
+| POST        | api/v1/assignments               | Api\V1\AssignmentController@store               | Authorization    | application/json   | application/json  | -              | Assignment data   | Created assignment   |
+| GET | HEAD  | api/v1/assignments/{assignment}  | Api\V1\AssignmentController@show                | Authorization    | application/json   | application/json  | assignment ID  | -                | Assignment details   |
+| PUT | PATCH | api/v1/assignments/{assignment}  | Api\V1\AssignmentController@update              | Authorization    | application/json   | application/json  | assignment ID  | Updated data    | Updated assignment   |
+| DELETE      | api/v1/assignments/{assignment}  | Api\V1\AssignmentController@destroy             | Authorization    | -                  | application/json  | assignment ID  | -                | Deleted assignment   |
+| GET | HEAD  | api/v1/categories               | Api\V1\CategoriesController@index               | Authorization    | application/json   | application/json  | -              | -                | Categories list      |
+| POST        | api/v1/categories               | Api\V1\CategoriesController@store               | Authorization    | application/json   | application/json  | -              | Category data    | Created category     |
+| GET | HEAD  | api/v1/categories/{category}    | Api\V1\CategoriesController@show                | Authorization    | application/json   | application/json  | category ID    | -                | Category details     |
+| PUT | PATCH | api/v1/categories/{category}    | Api\V1\CategoriesController@update              | Authorization    | application/json   | application/json  | category ID    | Updated data    | Updated category     |
+| DELETE      | api/v1/categories/{category}    | Api\V1\CategoriesController@destroy             | Authorization    | -                  | application/json  | category ID    | -                | Deleted category     |
+| GET | HEAD  | api/v1/favorites                | Api\V1\FavoritesController@index                | Authorization    | application/json   | application/json  | -              | -                | Favorites list       |
+| POST        | api/v1/favorites                | Api\V1\FavoritesController@store                | Authorization    | application/json   | application/json  | -              | Favorite data   | Created favorite     |
+| GET | HEAD  | api/v1/favorites/{favorite}     | Api\V1\FavoritesController@show                 | Authorization    | application/json   | application/json  | favorite ID    | -                | Favorite details     |
+| PUT | PATCH | api/v1/favorites/{favorite}     | Api\V1\FavoritesController@update               | Authorization    | application/json   | application/json  | favorite ID    | Updated data    | Updated favorite     |
+| DELETE      | api/v1/favorites/{favorite}     | Api\V1\FavoritesController@destroy              | Authorization    | -                  | application/json  | favorite ID    | -                | Deleted favorite     |
+| GET | HEAD  | api/v1/lessons                  | Api\V1\LessonsController@index                  | Authorization    | application/json   | application/json  | -              | -                | Lessons list        |
+| POST        | api/v1/lessons                  | Api\V1\LessonsController@store                  | Authorization    | application/json   | application/json  | -              | Lesson data    | Created lesson      |
+| GET | HEAD  | api/v1/lessons/{lesson}         | Api\V1\LessonsController@show                   | Authorization    | application/json   | application/json  | lesson ID      | -                | Lesson details      |
+| PUT | PATCH | api/v1/lessons/{lesson}         | Api\V1\LessonsController@update                 | Authorization    | application/json   | application/json  | lesson ID      | Updated data    | Updated lesson      |
+| DELETE      | api/v1/lessons/{lesson}         | Api\V1\LessonsController@destroy                | Authorization    | -                  | application/json  | lesson ID      | -                | Deleted lesson      |
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Load tests
 
-### Premium Partners
+1. Load Testing with Artillery
+Install Artillery:
+npm install -g artillery
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Run the next command:
+artillery run load-test.yml
